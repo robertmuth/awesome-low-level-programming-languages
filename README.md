@@ -34,13 +34,20 @@ Table of content
   - http://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html
   - http://www.ats-lang.org/Documents.html
 * implementation-language: ATS
-* meta-prgramming: TODO
+* meta-prgramming: N/A
 * backends: C
-* major projects using the language: TODO
+* major projects using the language: N/A
 * syntax: functional style
 * highlights:
   - proofs, dependent types
 
+```
+\#include "share/atspre_staload.hats"
+\#include "share/atspre_staload_libats_ML.hats"
+
+implement
+main0() = println! ("Hello, world!")
+```
 
 ```
 fun fibc (n: int) : int = let
@@ -54,8 +61,8 @@ end // end of [fibc]
 
 ## Ada
 
-* main: TODO
-* repo: TODO
+* main: N/A
+* repo: N/A
 * documentation:
   - awesome-ada https://github.com/ohenley/awesome-ada
   - https://learn.adacore.com/
@@ -93,12 +100,11 @@ function fibonacci(n : in integer) return integer is
 
 ## C
 
-* main: TODO
-* repo: TODO
+* main: N/A
+* repo: N/A
 * documentation:
   - https://github.com/inputsh/awesome-c
   - https://github.com/uhub/awesome-c
-* hello-world: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#C
 * meta-prgramming: pre-processor
 * backends: llvm, gcc, numerous others
 * major projects using the language: numerous
@@ -111,6 +117,14 @@ function fibonacci(n : in integer) return integer is
   - no defer (or RAII) mechanism
   - lots of undefined / implementation defined behavior
 
+```
+\#include <stdio.h>
+
+int main(void) 
+{
+  printf("Hello World!");
+}
+```
 
 ```
 int fib(int n) {
@@ -141,6 +155,15 @@ int fib(int n) {
   - curly braces, type to the left of identifier
   - large language
 
+```
+\#include <iostream>
+
+int main() 
+{
+  std::cout << "Hello World!" << std::endl;
+}
+
+```
 
 ```
 int fib(int n) {
@@ -184,7 +207,7 @@ fn int main(int argc, char** argv) {
 ```
 
 ```
-TODO
+N/A
 ```
 
 ## Carp
@@ -195,7 +218,7 @@ TODO
   - language guide: https://github.com/carp-lang/Carp/blob/master/docs/LanguageGuide.md
 * implementation-language: Haskel
 * meta-prgramming: generics
-* backends: TODO
+* backends: N/A
 * major projects using the language:
 * syntax: Lisp like
 * highlights:
@@ -210,7 +233,7 @@ fn main():
 ```
 
 ```
-TODO
+N/A
 ```
 
 ## Cone
@@ -236,7 +259,7 @@ fn main():
 ```
 
 ```
-TODO
+N/A
 
 ```
 
@@ -264,19 +287,19 @@ void main() {
 ```
 
 ```
-TODO
+N/A
 ```
 
 ## Forth
 
-* main: TODO
-* repo: TODO
+* main: N/A
+* repo: N/A
 * documentation:
   - http://www.forth.org/
 * implementation-language: C, assembler, 
-* meta-prgramming: TODO
+* meta-prgramming: N/A
 * backends: Custom
-* major projects using the language: TODO
+* major projects using the language: N/A
 * syntax: unique
 * highlights:
  - concatenative programing style
@@ -298,8 +321,8 @@ TODO
 
 ## Jai
 
-* main: TODO
-* repo: TODO
+* main: N/A
+* repo: N/A
 * documentation:
   - inofficial https://inductive.no/jai/
   - inofffical https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md
@@ -307,17 +330,17 @@ TODO
 * implementation-language: C++
 * meta-prgramming: macros
 * backends: LLVM (?), Custom
-* major projects using the language: TODO
-* syntax: TODO 
+* major projects using the language: N/A
+* syntax: N/A 
 * highlights:
   - compile time execution
 
 ```
-TODO
+N/A
 ```
 
 ```
-TODO
+N/A
 ```
 
 ## Nim
@@ -330,7 +353,7 @@ TODO
 * hello-world: https://nim-by-example.github.io/hello_world/
 * meta-prgramming: hygienic macro system allows direct manipulation of AST
 * backends: C(++), JS
-* major projects using the language: TODO
+* major projects using the language: N/A
 * syntac: python inspired syntax (indentation based)
 * highlights:
   - optional GC
@@ -343,7 +366,7 @@ echo "Hello World"
 ```
 
 ```
-TODO
+N/A
 ```
 
 
@@ -351,7 +374,7 @@ TODO
 
 * main: http://www.projectoberon.com
 * note: Oberon is not just a language but a full system (OS, even HW) 
-* repo: TODO
+* repo: N/A
 * documentation:
   - spec http://cas.inf.ethz.ch/projects/a2/repository/raw/trunk/LanguageReport/OberonLanguageReport.pdf 
   - http://www.projectoberon.com
@@ -386,7 +409,7 @@ END Hello.
 ```
 
 ```
-TODO
+N/A
 ```
 
 ## Odin
@@ -399,7 +422,7 @@ TODO
 * implementation-language: C++
 * meta-prgramming: generics
 * backends: LLVM
-* major projects using the language: TODO 
+* major projects using the language: N/A 
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - implcit context parameter 
@@ -410,7 +433,7 @@ package main
 import "core:fmt"
 
 main :: proc() {
-	fmt.println("Hellope!")
+	fmt.println("Hello World!")
 }
 
 ```
@@ -471,7 +494,7 @@ fn fibonacci(n: u32) -> u32 {
 * implementation-language: V
 * meta-prgramming: generics
 * backends: C, LLVM
-* major projects using the language: TODO
+* major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - go derived syntax
@@ -505,7 +528,7 @@ fn fn(n int) int {
 * implementation-language: Vale, Scala
 * meta-prgramming: generics
 * backends:
-* major projects using the language: TODO
+* major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - ownership semantics
@@ -517,7 +540,7 @@ fn main() export {
 ```
 
 ```
-TODO
+N/A
 ```
 
 ## Zig
@@ -530,7 +553,7 @@ TODO
 * hello-world: https://ziglang.org/documentation/master/
 * meta-prgramming: comptime (including types) 
 * backends: LLVM, custom
-* major projects using the language: TODO
+* major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - small language
