@@ -298,3 +298,111 @@ N/A
 	     ENDIF 
 	DROP 1 ;
 ```
+
+## Odin
+
+* main: https://odin-lang.org/
+* repo: https://github.com/odin-lang/Odin
+* documentation:
+  - spec https://odin-lang.org/docs/spec/
+  - https://www.youtube.com/channel/UCUSck1dOH7VKmG4lRW7tZXg
+* implementation-language: C++
+* meta-prgramming: generics
+* backends: LLVM
+* major projects using the language: N/A 
+* syntax: curly braces, type to the right of identifier
+* highlights:
+  - implcit context parameter
+
+
+```
+package main
+
+import "core:fmt"
+
+main :: proc() {
+	fmt.println("Hello World!")
+}
+
+```
+
+```
+fibonacci :: proc(n: int) -> int {
+  switch {
+  case n < 1:
+    return 0
+  case n == 1:
+    return 1
+  }
+  return fibonacci(n-1) + fibonacci(n-2)
+}
+
+```
+
+## Rust
+
+* main: https://www.rust-lang.org/
+* repo: https://github.com/rust-lang
+* documentation:
+  - https://doc.rust-lang.org/book/
+* implementation-language: V  
+* meta-prgramming: hygienic macros
+* backends: LLVM
+* major projects using the language: numerous (including large parts of firefox)
+* syntax: curly braces, type to the right of identifier
+* highlights:
+  - memory safety focus (ownership semantics)
+  - bare metal programming via `no_std` environment
+  - steep learning curve
+  - large language
+  - slow compiles
+
+```
+fn main() {
+    println!("Hello World!");
+}
+```
+
+```
+fn fibonacci(n: u32) -> u32 {
+    match n {
+        0 => 1,
+        1 => 1,
+        _ => fibonacci(n - 1) + fibonacci(n - 2),
+    }
+}
+```
+
+## V
+
+* main: https://vlang.io/
+* repo: https://github.com/vlang
+* documentation:
+  - https://github.com/vlang/v/blob/master/doc/docs.md
+* implementation-language: V
+* meta-prgramming: generics
+* backends: C, LLVM
+* major projects using the language: N/A
+* syntax: curly braces, type to the right of identifier
+* highlights:
+  - go derived syntax
+  - some confusion around memory-allocators and GC ("autofree")
+
+```
+fn main() {
+  println('Hello, World!')
+}
+```
+
+```
+fn fn(n int) int {
+  mut a := 0
+  mut b := 1
+  for _ in 0 .. n {
+    c := a + b
+    a = b
+    b = c
+  }
+  return a
+}
+```
