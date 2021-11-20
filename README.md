@@ -41,13 +41,6 @@ Table of content
 * highlights:
   - proofs, dependent types
 
-```
-\#include "share/atspre_staload.hats"
-\#include "share/atspre_staload_libats_ML.hats"
-
-implement
-main0() = println! ("Hello, world!")
-```
 
 ```
 fun fibc (n: int) : int = let
@@ -118,14 +111,6 @@ function fibonacci(n : in integer) return integer is
   - no defer (or RAII) mechanism
   - lots of undefined / implementation defined behavior
 
-```
-\#include <stdio.h>
-
-int main(void) 
-{
-  printf("Hello World!");
-}
-```
 
 ```
 int fib(int n) {
@@ -156,15 +141,6 @@ int fib(int n) {
   - curly braces, type to the left of identifier
   - large language
 
-```
-\#include <iostream>
-
-int main() 
-{
-  std::cout << "Hello World!" << std::endl;
-}
-
-```
 
 ```
 int fib(int n) {
