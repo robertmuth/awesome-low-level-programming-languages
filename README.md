@@ -51,21 +51,14 @@ main0() = println! ("Hello, world!")
 ```
 
 ```
-fun
-fibc (
-  n: int
-) : int = let
-//
-fun
-loop(n: int, f0: int, f1: int): int =
-  if n > 0 then loop(n-1, f1, f0+f1) else f0
-// end of [loop]
-//
+fun fibc (n: int) : int = let
+  fun loop(n: int, f0: int, f1: int): int =
+    if n > 0 then loop(n-1, f1, f0+f1) else f0
+  end of [loop]
 in
   loop(n, 0, 1)
 end // end of [fibc]
 ```
-
 
 ## Ada
 
@@ -75,7 +68,6 @@ end // end of [fibc]
   - awesome-ada https://github.com/ohenley/awesome-ada
   - https://learn.adacore.com/
   - http://groups.umd.umich.edu/cis/course.des/cis400/ada/ada.html
-* hello-world: https://riptutorial.com/ada/example/15002/hello-world
 * meta-prgramming: generics
 * backends: gcc (gnat), several commerical implementations
 * major projects using the language: numerous
@@ -138,15 +130,14 @@ int main(void)
 
 ```
 int fib(int n) {
-    if( n <= 1) return n;
     int a = 0;
     int b = 1;
-    for(int i = 1; i <= n; i++) {
+    for (int i = 0; i <= n; i++) {
        int c = a + b;
        a = b;
        b = c;
     }
-    return a + b;
+    return a;
 }
 ```
 
@@ -178,15 +169,14 @@ int main()
 
 ```
 int fib(int n) {
-    if( n <= 1) return n;
     int a = 0;
     int b = 1;
-    for(int i = 1; i <= n; i++) {
+    for (int i = 0; i <= n; i++) {
        int c = a + b;
        a = b;
        b = c;
     }
-    return a + b;
+    return a;
 }
 ```
 
@@ -230,7 +220,7 @@ N/A
   - language guide: https://github.com/carp-lang/Carp/blob/master/docs/LanguageGuide.md
 * implementation-language: Haskel
 * meta-prgramming: generics
-* backends: 
+* backends: N/A
 * major projects using the language:
 * syntax: Lisp like
 * highlights:
@@ -260,7 +250,7 @@ N/A
 * major projects using the language:
 * syntax: type to the right of identifier
 * highlights:
-  - proofs, dependent types,
+  - proofs, dependent types
   - co-routines, threads and actors
 
 ```
@@ -332,25 +322,28 @@ N/A
 
 ## Jai
 
-* main:
-* repo:
+* main: N/A
+* repo: N/A
 * documentation:
-  - https://inductive.no/jai/
-  - https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md
-* hello-world:
+  - inofficial https://inductive.no/jai/
+  - inofffical https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md
+  - Jonathan Blow YT channel https://www.youtube.com/user/jblow888/videos
+* implementation-language: C++
 * meta-prgramming: macros
 * backends: LLVM (?), Custom
 * major projects using the language: N/A
-* syntax: 
+* syntax: N/A 
 * highlights:
   - compile time execution
 
 ```
+N/A
 ```
 
 ```
-
+N/A
 ```
+
 ## Nim
 
 * main: https://nim-lang.org/
@@ -366,7 +359,7 @@ N/A
 * highlights:
   - optional GC
   - lifetime tracking
-  - large language
+  - largish language
 
 ```
 echo "Hello World"
@@ -423,45 +416,108 @@ N/A
 ## Odin
 
 * main: https://odin-lang.org/
-* repo:
+* repo: https://github.com/odin-lang/Odin
 * documentation:
+  - spec https://odin-lang.org/docs/spec/
   - https://www.youtube.com/channel/UCUSck1dOH7VKmG4lRW7tZXg
-* hello-world:
+* implementation-language: C++
 * meta-prgramming: generics
-* backends:
-* major projects using the language 
+* backends: LLVM
+* major projects using the language: N/A 
+* syntax: curly braces, type to the right of identifier
 * highlights:
   - compile time execution
 
+```
+package main
+
+import "core:fmt"
+
+main :: proc() {
+	fmt.println("Hellope!")
+}
+
+```
+
+```
+fibonacci :: proc(n: int) -> int {
+  switch {
+  case n < 1:
+    return 0
+  case n == 1:
+    return 1
+  }
+  return fibonacci(n-1) + fibonacci(n-2)
+}
+
+```
+
 ## Rust
 
-* main: 
-* repo:
+* main: https://www.rust-lang.org/
+* repo: https://github.com/rust-lang
 * documentation:
-* hello-world: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#Rust
+  - https://doc.rust-lang.org/book/
+* implementation-language: V  
 * meta-prgramming: hygienic macros
 * backends: LLVM
-* major projects using the language: numerous
+* major projects using the language: numerous (including large parts of firefox)
+* syntax: curly braces, type to the right of identifier
 * highlights:
   - memory safety focus (ownership semantics)
   - steep learning curve
   - large language
   - slow compiles
 
+```
+fn main() {
+    println!("Hello World!");
+}
+```
+
+```
+fn fibonacci(n: u32) -> u32 {
+    match n {
+        0 => 1,
+        1 => 1,
+        _ => fibonacci(n - 1) + fibonacci(n - 2),
+    }
+}
+```
 
 ## V
 
 * main: https://vlang.io/
 * repo: https://github.com/vlang
 * documentation:
-* hello-world:
+  - https://github.com/vlang/v/blob/master/doc/docs.md
+* implementation-language: V
 * meta-prgramming: generics
-* backends: C 
-* major projects using the language:
+* backends: C, LLVM
+* major projects using the language: N/A
+* syntax: curly braces, type to the right of identifier
 * highlights:
   - go derived syntax
-  - some confusion around memory-allocators and GC
+  - some confusion around memory-allocators and GC ("autofree")
 
+```
+fn main() {
+  println('Hello, World!')
+}
+```
+
+```
+fn fn(n int) int {
+  mut a := 0
+  mut b := 1
+  for _ in 0 .. n {
+    c := a + b
+    a = b
+    b = c
+  }
+  return a
+}
+```
 
 ## Vale
 
@@ -470,15 +526,23 @@ N/A
 * documentation:
   - introduction https://vale.dev/guide/introduction
 * implementation-language: Vale, Scala
-* hello-world: https://vale.dev/guide/introduction
 * meta-prgramming: generics
 * backends:
-* major projects using the language 
+* major projects using the language: N/A
+* syntax: curly braces, type to the right of identifier
 * highlights:
   - ownership semantics
 
+```
+fn main() export {
+  println("Hello world!");
+}
+```
 
-  
+```
+N/A
+```
+
 ## Zig
 
 * main: https://ziglang.org
@@ -489,11 +553,28 @@ N/A
 * hello-world: https://ziglang.org/documentation/master/
 * meta-prgramming: comptime (including types) 
 * backends: LLVM, custom
-* major projects using the language:
+* major projects using the language: N/A
+* syntax: curly braces, type to the right of identifier
 * highlights:
   - small language
   - no invisible control-flow
 
+```
+const std = @import("std");
+
+pub fn main() !void {
+    const stdout = std.io.getStdOut().writer();
+    try stdout.print("Hello, {s}!\n", .{"world"});
+}
+
+```
+
+```
+fn fibonacci(index: u32) u32 {
+    if (index < 2) return index;
+    return fibonacci(index - 1) + fibonacci(index - 2);
+}
+```
 
 <!--
 ## Template
