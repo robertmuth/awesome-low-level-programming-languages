@@ -157,3 +157,144 @@ int fib(int n) {
     return a;
 }
 ```
+
+## C3
+
+* main: http://www.c3-lang.org/
+* repo: https://github.com/c3lang/c3c
+* documentation:
+  - http://www.c3-lang.org/compare/
+* implementation-language: C
+* hello-world: http://www.c3-lang.org/firstproject/
+* meta-prgramming: generics, semantic macros
+* backends: LLVM
+* major projects using the language: numerous
+* syntax: curly braces, type to the left of identifier
+* highlights:
+  - evolution of C
+  - contracts
+
+```
+module hello_world;
+
+import std::io;
+
+fn int main(int argc, char** argv) {
+    io::println("Hello World!");
+    return 0;
+}
+
+```
+
+```
+N/A
+```
+
+## Carp
+
+* main: https://github.com/carp-lang/Carp
+* repo: https://github.com/carp-lang/Carp
+* documentation:
+  - language guide: https://github.com/carp-lang/Carp/blob/master/docs/LanguageGuide.md
+* implementation-language: Haskel
+* meta-prgramming: generics
+* backends: N/A
+* major projects using the language:
+* syntax: Lisp like
+* highlights:
+  - repl
+  - ownership tracking
+
+```
+import stdio
+
+fn main():
+  print <- "Hello world!"
+```
+
+```
+N/A
+```
+
+## Cone
+
+* main: https://cone.jondgoodwin.com/
+* repo: https://github.com/jondgoodwin/cone
+* documentation:
+  - reference: https://cone.jondgoodwin.com/coneref/index.html
+* implementation-language: C
+* meta-prgramming: macros, generics
+* backends: LLVM
+* major projects using the language:
+* syntax: type to the right of identifier
+* highlights:
+  - proofs, dependent types
+  - co-routines, threads and actors
+
+```
+import stdio
+
+fn main():
+  print <- "Hello world!"
+```
+
+```
+N/A
+
+```
+
+## D
+
+* main: https://dlang.org/
+* repo: https://github.com/dlang
+* documentation:
+  - spec https://dlang.org/spec/spec.html
+  - overview https://dlang.org/comparison.html
+* implementation-language: D
+* meta-prgramming: generics
+* backends: custom, LLVM
+* major projects using the language: numerous
+* syntax: curly braces, type to the left of identifier
+* highlights:
+  - large language
+
+```
+import std.stdio;
+
+void main() {
+    writeln("Hello, World!");
+}
+```
+
+```
+N/A
+```
+
+## Forth
+
+* main: N/A
+* repo: N/A
+* documentation:
+  - http://www.forth.org/
+* implementation-language: C, assembler, 
+* meta-prgramming: N/A
+* backends: Custom
+* major projects using the language: N/A
+* syntax: unique
+* highlights:
+ - concatenative programing style
+ - many different flavors
+ - very easy to implement
+ 
+```
+: HELLO ."Hello World " ;
+
+```
+
+```
+: FIB ( x -- y ) RECURSIVE
+	DUP 2 > IF DUP  1- RECURSE 
+		   SWAP 2- RECURSE +  EXIT 
+	     ENDIF 
+	DROP 1 ;
+```
