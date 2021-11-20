@@ -6,26 +6,6 @@ programming.
 Excluded are languages relying on managed run-times and garbage collection.
 
 
-Table of content
-
-- [ATS](#ATS)
-- [Ada](#Ada)
-- [C](#C)
-- [C++](#C++)
-- [C3](#C3)
-- [Carp](#Carp)
-- [Cone](#Cone)
-- [D](#D)
-- [Forth](#Forth)
-- [Jai](#Jai)
-- [Nim](#Nim)
-- [Oberon](#Oberon)
-- [Odin](#Odin)
-- [Rust](#Rust)
-- [Vala](#Vala)
-- [V](#V)
-- [Zig](#Zig)
-
 ## ATS
 
 * main: http://www.ats-lang.org/
