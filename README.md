@@ -406,3 +406,76 @@ fn fn(n int) int {
   return a
 }
 ```
+
+
+## Vale
+
+* main: https://vale.dev/
+* repo: https://github.com/ValeLang/Vale
+* documentation:
+  - introduction https://vale.dev/guide/introduction
+* implementation-language: Vale, Scala
+* meta-prgramming: generics
+* backends:
+* major projects using the language: N/A
+* syntax: curly braces, type to the right of identifier
+* highlights:
+  - ownership semantics
+
+```
+fn main() export {
+  println("Hello world!");
+}
+```
+
+```
+N/A
+```
+
+## Zig
+
+* main: https://ziglang.org
+* repo: https://github.com/ziglang/zig
+* documentation:
+  - https://ziglang.org/documentation/master/
+* implementation-language: C++, Zig
+* hello-world: https://ziglang.org/documentation/master/
+* meta-prgramming: comptime (including types) 
+* backends: LLVM, custom
+* major projects using the language: N/A
+* syntax: curly braces, type to the right of identifier
+* highlights:
+  - small language
+  - no invisible control-flow
+
+```
+const std = @import("std");
+
+pub fn main() !void {
+    const stdout = std.io.getStdOut().writer();
+    try stdout.print("Hello, {s}!\n", .{"world"});
+}
+
+```
+
+```
+fn fibonacci(index: u32) u32 {
+    if (index < 2) return index;
+    return fibonacci(index - 1) + fibonacci(index - 2);
+}
+```
+
+<!--
+## Template
+
+* main:
+* repo:
+* documentation:
+* implementation-language:
+* hello-world:
+* meta-prgramming:
+* backends:
+* major projects using the language
+* syntax:
+* highlights:
+-->
