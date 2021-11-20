@@ -14,7 +14,7 @@ Table of content
 - [C++](#C++)
 - [C3](#C3)
 - [Carp](#Carp)
-- [Cone(#Cone)
+- [Cone](#Cone)
 - [D](#D)
 - [Forth](#Forth)
 - [Jai](#Jai)
@@ -109,14 +109,18 @@ Table of content
 ## Carp
 
 * main: 
-* repo:
+* repo: https://github.com/carp-lang/Carp
 * documentation:
+  - language guide: https://github.com/carp-lang/Carp/blob/master/docs/LanguageGuide.md
+* implementation-language: Haskel
 * hello-world:
-* meta-prgramming:
+* meta-prgramming: generics
 * backends: 
-* major projects using the language: numerous
+* major projects using the language:
 * highlights:
-- proofs, dependent types,
+  - repl
+  - ownership tracking
+  - lisp inspired syntax
 * concerns:
 
 ## Cone
@@ -128,8 +132,9 @@ Table of content
 * hello-world:
 * meta-prgramming: macros, generics
 * backends: llvm
-* major projects using the language 
+* major projects using the language:
 * highlights:
+  - proofs, dependent types,
 * concerns:
 
 
@@ -190,7 +195,7 @@ Table of content
 * implementation-language: Nim
 * hello-world: https://nim-by-example.github.io/hello_world/
 * meta-prgramming: macro system allows direct manipulation of AST
-* backends: C, JS
+* backends: C(++), JS
 * major projects using the language:
 * highlights:
   - python inspired notation
@@ -200,9 +205,17 @@ Table of content
 
 ## Oberon
 
-* main:
+* main: http://www.projectoberon.com
+* note: Oberon is not just a language but a full system (OS, even HW) 
 * repo:
 * documentation:
+  - spec http://cas.inf.ethz.ch/projects/a2/repository/raw/trunk/LanguageReport/OberonLanguageReport.pdf 
+  - http://www.projectoberon.com
+  - http://www.ethoberon.ethz.ch/WirthPubl/ProjectOberon.pdf
+  - [System](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.System.pdf)
+    [Application](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.Applications.pdf)
+    [Computer](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.Computer.pdf)
+
 * implementation-language:
 * hello-world:
 * meta-prgramming:
@@ -284,7 +297,7 @@ Table of content
   - https://ziglang.org/documentation/master/
 * implementation-language: C++, Zig
 * hello-world: https://ziglang.org/documentation/master/
-* meta-prgramming: comptime
+* meta-prgramming: comptime (including types) 
 * backends: LLVM, custom
 * major projects using the language:
 * highlights:
@@ -293,7 +306,7 @@ Table of content
 * concerns:
 
 <!--
-## ZZZ Template ZZZ
+## Template
 
 * main:
 * repo:
