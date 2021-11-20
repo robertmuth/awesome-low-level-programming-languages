@@ -42,8 +42,8 @@ Table of content
   - proofs, dependent types
 
 ```
-#include "share/atspre_staload.hats"
-#include "share/atspre_staload_libats_ML.hats"
+\#include "share/atspre_staload.hats"
+\#include "share/atspre_staload_libats_ML.hats"
 
 implement
 main0() = println! ("Hello, world!")
@@ -119,7 +119,7 @@ function fibonacci(n : in integer) return integer is
   - lots of undefined / implementation defined behavior
 
 ```
-#include <stdio.h>
+\#include <stdio.h>
 
 int main(void) 
 {
@@ -157,7 +157,7 @@ int fib(int n) {
   - large language
 
 ```
-#include <iostream>
+\#include <iostream>
 
 int main() 
 {
