@@ -317,6 +317,64 @@ N/A
 	DROP 1 ;
 ```
 
+## Oberon
+
+* main: http://www.projectoberon.com
+* note:
+  - Oberon is not just a language but a full system (OS, even HW)
+  - there are several recent variants:
+    - active Oberon Spec from 2019  http://cas.inf.ethz.ch/projects/a2/repository/raw/trunk/LanguageReport/OberonLanguageReport.pdf
+    - Oberon+ https://github.com/oberon-lang
+* repo: N/A
+* documentation:
+  - http://www.projectoberon.com
+  - http://www.ethoberon.ethz.ch/WirthPubl/ProjectOberon.pdf
+  - [System](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.System.pdf)
+    [Application](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.Applications.pdf)
+    [Computer](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.Computer.pdf)
+  
+
+* implementation-language: Oberon
+* meta-prgramming: None
+* backends: Custom
+* major projects using the language: Oberon-OS
+* syntax: begin/end, type to the right of identifier
+* highlights:
+  - deliberate small language
+
+```
+MODULE Hello;
+         IMPORT Oberon, Texts;
+  VAR W: Texts.Writer;
+  
+  PROCEDURE World*;
+  BEGIN
+    Texts.WriteString(W, "Hello World!");
+    Texts.WriteLn(W);
+    Texts.Append(Oberon.Log, W.buf);
+  END World;
+
+BEGIN
+  Texts.OpenWriter(W);
+END Hello.
+```
+
+```
+PROCEDURE fib(VAR n: INTEGER) : INTEGER;
+  VAR
+    a, b, c, i : INTEGER;
+  BEGIN 
+    a := 0;
+    b := 1;
+    FOT i := 1 TO n DO
+      c := a + b;
+      a = b
+      b = c
+    END;
+    RETURN a;
+END fib;
+```
+
 ## Odin
 
 * main: https://odin-lang.org/
