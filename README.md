@@ -10,6 +10,7 @@ Table of content
 
 - [ATS](#ATS)
 - [Ada](#Ada)
+- [Beef](#Beef)
 - [C](#C)
 - [C++](#C++)
 - [C3](#C3)
@@ -98,6 +99,42 @@ function fibonacci(n : in integer) return integer is
     return fib;
  end fibonacci;
 ```
+
+## Beef
+
+* main: https://www.beeflang.org/
+* repo: https://github.com/beefytech/Beef/
+* documentation:
+  - awesome-beef https://github.com/Jonathan-Racaud/awesome-beef
+* implementation-language: C++
+* meta-prgramming: generics
+* backends: LLVM
+* major projects using the language: N/A
+* syntax: curly braces, type to the left of identifier
+* highlights:
+  - inspired by C#
+  - co-designed with IDE
+  - windows centric development
+
+```
+using System;
+
+namespace Hello
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello, world!");
+        }
+    }
+}
+```
+
+```
+N/A
+```
+
 ## C
 
 * main: N/A
@@ -565,7 +602,6 @@ fn fibonacci(n: u32) u32 {
 * repo:
 * documentation:
 * implementation-language:
-* hello-world:
 * meta-prgramming:
 * backends:
 * major projects using the language
