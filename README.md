@@ -86,11 +86,11 @@ end Hello_World;
 
 ```
 function fibonacci(n : in integer) return integer is
-    f1, f2, fib : integer;
+ f1, f2, fib : integer;
  begin
-    f1 := 1;
+    f1 := 0;
     f2 := 1;
-    for i in 3..n loop
+    for i in 1..n loop
        fib := f1 + f2;
        f1 := f2;
        f2 := fib;
@@ -120,8 +120,7 @@ function fibonacci(n : in integer) return integer is
 ```
 #include <stdio.h>
 
-int main(void) 
-{
+int main() {
   printf("Hello World!");
 }
 ```
@@ -130,7 +129,7 @@ int main(void)
 int fib(int n) {
     int a = 0;
     int b = 1;
-    for (int i = 0; i <= n; i++) {
+    for (int i = 0; i < n; i++) {
        int c = a + b;
        a = b;
        b = c;
@@ -158,8 +157,7 @@ int fib(int n) {
 ```
 #include <iostream>
 
-int main() 
-{
+int main() {
   std::cout << "Hello World!" << std::endl;
 }
 
@@ -169,7 +167,7 @@ int main()
 int fib(int n) {
     int a = 0;
     int b = 1;
-    for (int i = 0; i <= n; i++) {
+    for (int i = 0; i < n; i++) {
        int c = a + b;
        a = b;
        b = c;
@@ -329,7 +327,7 @@ N/A
 * implementation-language: C++
 * meta-prgramming: generics
 * backends: LLVM
-* major projects using the language: N/A 
+* major projects using the language: [EmberGen](https://jangafx.com/software/embergen/)
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - implcit context parameter
@@ -341,7 +339,7 @@ package main
 import "core:fmt"
 
 main :: proc() {
-	fmt.println("Hello World!")
+  fmt.println("Hello World!")
 }
 
 ```
@@ -372,6 +370,7 @@ fibonacci :: proc(n: int) -> int {
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - memory safety focus (ownership semantics)
+  - immutable by default
   - bare metal programming via `no_std` environment
   - steep learning curve
   - large language
@@ -384,14 +383,17 @@ fn main() {
 ```
 
 ```
-fn fibonacci(n: u32) -> u32 {
-    match n {
-        0 => 1,
-        1 => 1,
-        _ => fibonacci(n - 1) + fibonacci(n - 2),
-    }
+fn fib(n: u8) -> u64 {
+  let mut prev: u64 = 0;
+  let mut curr: u64 = 1;
+  for _ in 1..n {
+      let next = prev + curr;
+      prev = curr;
+      curr = next;
+  }
+  curr
 }
-```
+```  
 
 ## V
 
@@ -406,6 +408,7 @@ fn fibonacci(n: u32) -> u32 {
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - go derived syntax
+  - immutable by default
   - some confusion around memory-allocators and GC ("autofree")
 
 ```
@@ -434,12 +437,14 @@ fn fn(n int) int {
 * repo: https://github.com/ValeLang/Vale
 * documentation:
   - introduction https://vale.dev/guide/introduction
+  - https://www.reddit.com/r/vale/
 * implementation-language: Vale, Scala
 * meta-prgramming: generics
-* backends:
+* backends: LLVM
 * major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
 * highlights:
+  - immutable by default
   - ownership semantics
 
 ```
@@ -466,6 +471,9 @@ N/A
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - small language
+  - testing built into the language
+  - error handling with dedicated syntax
+  - variables must be declared via `const` (immutable) or `var` (mutable)
   - no invisible control-flow
 
 ```
@@ -479,9 +487,16 @@ pub fn main() !void {
 ```
 
 ```
-fn fibonacci(index: u32) u32 {
-    if (index < 2) return index;
-    return fibonacci(index - 1) + fibonacci(index - 2);
+fn fibonacci(n: u32) u32 {
+   var a : u32 = 0;
+   var b : u32 = 1;
+   var i : u32 = 0
+   while (i < n) : (i += 1) {
+      const c : u32 = a + b;
+      a = b;
+      b = c;
+   }
+   return a;
 }
 ```
 
