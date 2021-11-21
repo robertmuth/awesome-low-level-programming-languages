@@ -28,6 +28,21 @@ Table of content
 - [V](#V)
 - [Zig](#Zig)
 
+
+Not yet summarized:
+
+[C2][http://www.c2lang.org/)
+[Jiyu](https://jiyu.handmade.network/), 
+[Kit](https://www.kitlang.org/)
+[Modula-2](https://en.wikipedia.org/wiki/Modula-3),
+[Modula-2](https://en.wikipedia.org/wiki/Modula-3),
+[Myr](https://myrlang.org/)
+[Pascal](https://en.wikipedia.org/wiki/Pascal_(programming_language)),
+[Silk](https://github.com/AjayMT/silk),
+[Sparrow](https://github.com/Sparrow-lang/sparrow),
+[Vox](https://github.com/MrSmith33/vox)
+[eC](https://ec-lang.org/)
+
 ## ATS
 
 * main: http://www.ats-lang.org/
