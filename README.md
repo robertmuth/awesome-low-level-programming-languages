@@ -3,7 +3,9 @@
 A curated list of low level programming languages primarily aimed and OS and game
 programming.
 
-Excluded are languages relying on managed run-times and garbage collection.
+**Excluded are languages relying on managed run-times and garbage collection.**
+
+Feel free to send pull-requests with additions and corrections.
 
 
 Table of content
@@ -20,6 +22,7 @@ Table of content
 - [D](#D)
 - [Forth](#Forth)
 - [Jai](#Jai)
+- [Kit](#Kit)
 - [Nim](#Nim)
 - [Oberon](#Oberon)
 - [Odin](#Odin)
@@ -34,7 +37,6 @@ Table of content
 Not yet summarized:
 
 [Jiyu](https://jiyu.handmade.network/), 
-[Kit](https://www.kitlang.org/)
 [Modula-2](https://en.wikipedia.org/wiki/Modula-3),
 [Modula-2](https://en.wikipedia.org/wiki/Modula-3),
 [Myr](https://myrlang.org/)
@@ -310,7 +312,7 @@ N/A
 * discussion:
   - https://news.ycombinator.com/item?id=28875051
   - https://news.ycombinator.com/item?id=20368969
-* implementation-language: Haskel
+* implementation-language: Haskell
 * meta-prgramming: generics
 * backends: N/A
 * major projects using the language:
@@ -362,13 +364,13 @@ N/A
 ## D
 
 * main: https://dlang.org/
-* repo: https://github.com/dlang
+* repo: https://github.com/dlang, https://github.com/ldc-developers/ldc, https://gdcproject.org/
 * documentation:
   - spec https://dlang.org/spec/spec.html
   - overview https://dlang.org/comparison.html
 * implementation-language: D
 * meta-prgramming: generics
-* backends: custom, LLVM
+* backends: Custom (X86-64), LLVM, gcc
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
 * highlights:
@@ -416,6 +418,31 @@ N/A
 	DROP 1 ;
 ```
 
+
+## Kit
+
+* main: https://www.kitlang.org/
+* repo: https://github.com/kitlang/kit
+* documentation:
+* discussion:
+  - https://news.ycombinator.com/from?site=kitlang.org
+* implementation-language: Haskell
+* meta-prgramming:
+* backends: C
+* major projects using the language: N/A
+* syntax: curly braces, type to the left of identifier
+* highlights:
+
+```
+function main() {
+    printf("%s\n", "hello world!");
+}
+```
+
+```
+N/A
+```
+
 ## Oberon
 
 * main: http://www.projectoberon.com
@@ -439,6 +466,7 @@ N/A
 * major projects using the language: Oberon-OS
 * syntax: begin/end, type to the right of identifier
 * highlights:
+  - evolution of Pascal and Modula-2
   - deliberate small language
 
 ```
