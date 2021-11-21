@@ -25,8 +25,9 @@ Table of content
 - [Odin](#Odin)
 - [Rust](#Rust)
 - [Scopes](#Scopes)
-- [Vala](#Vala)
 - [V](#V)
+- [Vale](#Vale)
+- [Vox](#Vox)
 - [Zig](#Zig)
 
 
@@ -40,7 +41,6 @@ Not yet summarized:
 [Pascal](https://en.wikipedia.org/wiki/Pascal_(programming_language)),
 [Silk](https://github.com/AjayMT/silk),
 [Sparrow](https://github.com/Sparrow-lang/sparrow),
-[Vox](https://github.com/MrSmith33/vox)
 [eC](https://ec-lang.org/)
 
 ## ATS
@@ -373,6 +373,7 @@ N/A
 * syntax: curly braces, type to the left of identifier
 * highlights:
   - large language
+  - optional GC
 
 ```
 import std.stdio;
@@ -651,6 +652,39 @@ fn main() export {
 N/A
 ```
 
+## Vox
+
+* main: https://github.com/MrSmith33/vox
+* repo: https://github.com/MrSmith33/vox
+* documentation: N/A
+* discussion: N/A
+* implementation-language: D
+* meta-prgramming: generics
+* backends: Custom (X86-64)
+* major projects using the language: N/A
+* syntax: curly braces, type to the left of identifier
+* highlights:
+  - AOT + JIT
+
+```
+enum u32 stdin  = 0;
+enum u32 stdout = 1;
+enum u32 stderr = 2;
+
+@extern(syscall, 60)
+void exit(i32 error_code);
+
+@extern(syscall, 1)
+void sys_write(u32 fd, u8* buf, u64 count);
+
+void write(u32 fd, u8[] data) { sys_write(fd, data.ptr, data.length); }
+
+void main(u8* lpCmdLine, i32 nShowCmd) {
+	write(stdout, msg);
+	exit(0);
+}
+```
+  
 ## Zig
 
 * main: https://ziglang.org
