@@ -23,6 +23,7 @@ Table of content
 - [Oberon](#Oberon)
 - [Odin](#Odin)
 - [Rust](#Rust)
+- [Scopes](#Scopes)
 - [Vala](#Vala)
 - [V](#V)
 - [Zig](#Zig)
@@ -106,6 +107,8 @@ function fibonacci(n : in integer) return integer is
 * repo: https://github.com/beefytech/Beef/
 * documentation:
   - awesome-beef https://github.com/Jonathan-Racaud/awesome-beef
+* discussion:
+  - https://news.ycombinator.com/item?id=21991382
 * implementation-language: C++
 * meta-prgramming: generics
 * backends: LLVM
@@ -251,6 +254,9 @@ N/A
 * repo: https://github.com/carp-lang/Carp
 * documentation:
   - language guide: https://github.com/carp-lang/Carp/blob/master/docs/LanguageGuide.md
+* discussion:
+  - https://news.ycombinator.com/item?id=28875051
+  - https://news.ycombinator.com/item?id=20368969
 * implementation-language: Haskel
 * meta-prgramming: generics
 * backends: N/A
@@ -277,6 +283,8 @@ N/A
 * repo: https://github.com/jondgoodwin/cone
 * documentation:
   - reference: https://cone.jondgoodwin.com/coneref/index.html
+* discussion:
+  - https://news.ycombinator.com/item?id=19565824
 * implementation-language: C
 * meta-prgramming: macros, generics
 * backends: LLVM
@@ -369,8 +377,8 @@ N/A
   - [System](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.System.pdf)
     [Application](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.Applications.pdf)
     [Computer](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.Computer.pdf)
-  
-
+* discussion:
+  - https://news.ycombinator.com/item?id=21557057
 * implementation-language: Oberon
 * meta-prgramming: None
 * backends: Custom
@@ -419,6 +427,8 @@ END fib;
 * documentation:
   - spec https://odin-lang.org/docs/spec/
   - https://www.youtube.com/channel/UCUSck1dOH7VKmG4lRW7tZXg
+* discussion:
+  - https://news.ycombinator.com/item?id=22199942
 * implementation-language: C++
 * meta-prgramming: generics
 * backends: LLVM
@@ -490,6 +500,37 @@ fn fib(n: u8) -> u64 {
 }
 ```  
 
+## Scopes
+
+* main: https://scopes.readthedocs.io/en/latest/
+* repo: https://hg.sr.ht/~duangle/scopes
+* documentation:
+* discussion:
+  - https://news.ycombinator.com/item?id=19830860
+  - https://news.ycombinator.com/item?id=16603134
+* implementation-language: C++
+* meta-prgramming:
+* backends: LLVM
+* major projects using the language
+* syntax: indentation sensitive
+* highlights:
+  - on-line compiler
+
+```
+print "hello world"
+
+```
+
+```
+fn fib (n)
+  loop (a b = 0 1)
+    if (b < n)
+      repeat b (a + b)
+    else
+      break b
+
+```
+
 ## V
 
 * main: https://vlang.io/
@@ -533,6 +574,8 @@ fn fn(n int) int {
 * documentation:
   - introduction https://vale.dev/guide/introduction
   - https://www.reddit.com/r/vale/
+* discussion:
+  - https://news.ycombinator.com/item?id=16603134
 * implementation-language: Vale, Scala
 * meta-prgramming: generics
 * backends: LLVM
@@ -558,8 +601,11 @@ N/A
 * repo: https://github.com/ziglang/zig
 * documentation:
   - https://ziglang.org/documentation/master/
+* discussion:
+  - https://news.ycombinator.com/item?id=25797025
+  - https://news.ycombinator.com/item?id=28458713
+  - https://news.ycombinator.com/item?id=27399876
 * implementation-language: C++, Zig
-* hello-world: https://ziglang.org/documentation/master/
 * meta-prgramming: comptime (including types) 
 * backends: LLVM, custom
 * major projects using the language: N/A
@@ -601,6 +647,7 @@ fn fibonacci(n: u32) u32 {
 * main:
 * repo:
 * documentation:
+* discussion:
 * implementation-language:
 * meta-prgramming:
 * backends:
