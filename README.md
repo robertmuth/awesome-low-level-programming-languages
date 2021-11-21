@@ -13,6 +13,7 @@ Table of content
 - [Beef](#Beef)
 - [C](#C)
 - [C++](#C++)
+- [C2](#C2)
 - [C3](#C3)
 - [Carp](#Carp)
 - [Cone](#Cone)
@@ -31,7 +32,6 @@ Table of content
 
 Not yet summarized:
 
-[C2][http://www.c2lang.org/)
 [Jiyu](https://jiyu.handmade.network/), 
 [Kit](https://www.kitlang.org/)
 [Modula-2](https://en.wikipedia.org/wiki/Modula-3),
@@ -234,6 +234,39 @@ int fib(int n) {
 }
 ```
 
+## C2
+
+* main: http://www.c2lang.org/
+* repo: https://github.com/c2lang/
+* documentation:
+  - http://c2lang.org/site/
+* discussion:
+  - https://news.ycombinator.com/from?site=c2lang.org
+* implementation-language: C++
+* hello-world: http://www.c3-lang.org/firstproject/
+* meta-prgramming: generics, N/A
+* backends: LLVM
+* major projects using the language: N/A
+* syntax: curly braces, type to the left of identifier
+* highlights:
+  - modernized C
+
+```
+module hello_world;
+
+import stdio local;
+
+public func i32 main(i32 argc, i8** argv) {
+    printf("Hello World!\n");
+    return 0;
+}
+
+```
+
+```
+N/A
+```
+
 ## C3
 
 * main: http://www.c3-lang.org/
@@ -246,7 +279,7 @@ int fib(int n) {
 * hello-world: http://www.c3-lang.org/firstproject/
 * meta-prgramming: generics, semantic macros
 * backends: LLVM
-* major projects using the language: numerous
+* major projects using the language: N/A
 * syntax: curly braces, type to the left of identifier
 * highlights:
   - evolution of C
