@@ -166,7 +166,7 @@ N/A
   - https://github.com/inputsh/awesome-c
   - https://github.com/uhub/awesome-c
 * meta-prgramming: pre-processor
-* backends: llvm, gcc, numerous others
+* backends: LLVM, gcc, numerous others
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
 * highlights:
@@ -206,14 +206,15 @@ int fib(int n) {
   - reference https://en.cppreference.com/w/
   - awesome-cpp https://github.com/fffaraz/awesome-cpp
   - AwesomePerfCpp https://github.com/fenbf/AwesomePerfCpp
-* meta-prgramming:
-* backends:  llvm, gcc, numerous others
+* meta-prgramming: template meta prgrammaing, generics, macros
+* backends: LLVM, gcc, numerous others
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
 * highlights:
   - curly braces, type to the left of identifier
   - large language
-
+  - slow compiles
+  
 ```
 #include <iostream>
 
