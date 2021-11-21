@@ -35,6 +35,9 @@ Table of content
 * documentation:
   - http://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html
   - http://www.ats-lang.org/Documents.html
+* discussion:
+  - https://news.ycombinator.com/item?id=28214665
+  - https://news.ycombinator.com/from?site=ats-lang.org
 * implementation-language: ATS
 * meta-prgramming: N/A
 * backends: C
@@ -222,6 +225,8 @@ int fib(int n) {
 * repo: https://github.com/c3lang/c3c
 * documentation:
   - http://www.c3-lang.org/compare/
+* discussion:
+  - https://news.ycombinator.com/item?id=27876570
 * implementation-language: C
 * hello-world: http://www.c3-lang.org/firstproject/
 * meta-prgramming: generics, semantic macros
@@ -537,6 +542,8 @@ fn fib (n)
 * repo: https://github.com/vlang
 * documentation:
   - https://github.com/vlang/v/blob/master/doc/docs.md
+* discussion:
+  - https://news.ycombinator.com/from?site=vlang.io
 * implementation-language: V
 * meta-prgramming: generics
 * backends: C, LLVM
@@ -576,6 +583,7 @@ fn fn(n int) int {
   - https://www.reddit.com/r/vale/
 * discussion:
   - https://news.ycombinator.com/item?id=16603134
+  - https://news.ycombinator.com/from?site=vale.dev
 * implementation-language: Vale, Scala
 * meta-prgramming: generics
 * backends: LLVM
@@ -605,6 +613,7 @@ N/A
   - https://news.ycombinator.com/item?id=25797025
   - https://news.ycombinator.com/item?id=28458713
   - https://news.ycombinator.com/item?id=27399876
+  - https://news.ycombinator.com/from?site=ziglang.org
 * implementation-language: C++, Zig
 * meta-prgramming: comptime (including types) 
 * backends: LLVM, custom
