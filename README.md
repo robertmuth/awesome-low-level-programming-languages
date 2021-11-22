@@ -423,6 +423,29 @@ N/A
 	DROP 1 ;
 ```
 
+## Jai
+
+* main: N/A
+* repo: N/A
+* documentation:
+  - inofficial https://inductive.no/jai/
+  - inofffical https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md
+  - Jonathan Blow YT channel https://www.youtube.com/user/jblow888/videos
+* implementation-language: C++
+* meta-prgramming: macros
+* backends: LLVM (?), Custom
+* major projects using the language: N/A
+* syntax: N/A 
+* highlights:
+  - compile time execution
+
+```
+N/A
+```
+
+```
+N/A
+```
 
 ## Kit
 
@@ -453,10 +476,10 @@ N/A
 * main: http://www.projectoberon.com
 * note:
   - Oberon DOES use garbage collection but it has been used to implememt an OS of the same name
-    so we include here
+    so we include here.
   - There are serveral flavors of Oberon (
       Oberon-2 (1992),
-      [Obereon-7 (2007](http://people.inf.ethz.ch/wirth/Oberon/Oberon07.Report.pdf),
+      [Obereon-7 (2007)](http://people.inf.ethz.ch/wirth/Oberon/Oberon07.Report.pdf),
       [Active Oberon](http://cas.inf.ethz.ch/projects/a2/repository/raw/trunk/LanguageReport/OberonLanguageReport.pdf),
       [Oberon+](https://github.com/oberon-lang) )
 * repo:
