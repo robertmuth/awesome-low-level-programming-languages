@@ -40,10 +40,12 @@ Not yet summarized:
 [Modula-2](https://en.wikipedia.org/wiki/Modula-3),
 [Modula-2](https://en.wikipedia.org/wiki/Modula-3),
 [Myr](https://myrlang.org/)
-[Pascal](https://en.wikipedia.org/wiki/Pascal_(programming_language)),
+[(Free) Pascal/Delphi](https://en.wikipedia.org/wiki/Pascal_(programming_language)),
 [Silk](https://github.com/AjayMT/silk),
 [Sparrow](https://github.com/Sparrow-lang/sparrow),
 [eC](https://ec-lang.org/)
+[Terra](https://terralang.org/)
+[Vala](https://wiki.gnome.org/Projects/Vala)
 
 ## ATS
 
@@ -347,7 +349,6 @@ N/A
 * major projects using the language:
 * syntax: type to the right of identifier
 * highlights:
-  - proofs, dependent types
   - co-routines, threads and actors
 
 ```
@@ -449,6 +450,7 @@ N/A
 * main: http://www.projectoberon.com
 * note:
   - Oberon is not just a language but a full system (OS, even HW)
+  - Some flavors of the language rely on garbage collection.
   - there are several recent variants:
     - active Oberon Spec from 2019  http://cas.inf.ethz.ch/projects/a2/repository/raw/trunk/LanguageReport/OberonLanguageReport.pdf
     - Oberon+ https://github.com/oberon-lang
