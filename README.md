@@ -19,6 +19,7 @@ Table of content
 - [C3](#C3)
 - [Carp](#Carp)
 - [Cone](#Cone)
+- [Crystal](#Crystal)
 - [D](#D)
 - [Forth](#Forth)
 - [Jai](#Jai)
@@ -41,13 +42,13 @@ Not yet summarized:
 [Modula-2](https://en.wikipedia.org/wiki/Modula-3),
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
 [Myr](https://myrlang.org/),
+[Roc](https://www.roc-lang.org/),
 [Silk](https://github.com/AjayMT/silk),
 [Sparrow](https://github.com/Sparrow-lang/sparrow),
-[eC](https://ec-lang.org/),
+[Swift](https://www.swift.org/),
 [Terra](https://terralang.org/),
 [Vala](https://wiki.gnome.org/Projects/Vala),
-[Swift](https://www.swift.org/),
-[Roc](https://www.roc-lang.org/),
+[eC](https://ec-lang.org/),
 
 
 ## ATS
@@ -364,6 +365,39 @@ fn main():
 ```
 N/A
 
+```
+
+## Crystal
+
+* main: https://crystal-lang.org/
+* repo: https://github.com/crystal-lang/crystal
+* note: use garbage collection but it is possible to strip out runtime (see [Lilith Kernel](https://github.com/ffwff/lilith))
+* documentation:
+  - https://crystal-lang.org/reference/
+* discussion:
+  - https://news.ycombinator.com/from?site=kitlang.org
+* implementation-language: Crystal
+* meta-prgramming: N/A
+* backends: LLVM
+* major projects using the language: N/A
+* syntax: 
+* highlights:
+  - similar to ruby 
+
+```
+puts "Hello World"
+```
+
+```
+def fib(n)
+  a = 0
+  b = 1
+  n.times do
+    a += b
+    a, b = b, a
+  end
+  a
+end
 ```
 
 ## D
