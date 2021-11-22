@@ -3,7 +3,7 @@
 A curated list of low level programming languages primarily aimed and OS and game
 programming.
 
-**Excluded are languages relying on managed run-times and garbage collection.**
+**Excluded are languages relying on managed run-times and without manual memory management.**
 
 Feel free to send pull-requests with additions and corrections.
 
@@ -26,6 +26,7 @@ Table of content
 - [Nim](#Nim)
 - [Oberon](#Oberon)
 - [Odin](#Odin)
+- [(Free)Pascal/Delphi](#FreePascal)
 - [Rust](#Rust)
 - [Scopes](#Scopes)
 - [V](#V)
@@ -38,14 +39,16 @@ Not yet summarized:
 
 [Jiyu](https://jiyu.handmade.network/), 
 [Modula-2](https://en.wikipedia.org/wiki/Modula-3),
-[Modula-2](https://en.wikipedia.org/wiki/Modula-3),
-[Myr](https://myrlang.org/)
-[(Free) Pascal/Delphi](https://en.wikipedia.org/wiki/Pascal_(programming_language)),
+[Modula-3](https://en.wikipedia.org/wiki/Modula-3),
+[Myr](https://myrlang.org/),
 [Silk](https://github.com/AjayMT/silk),
 [Sparrow](https://github.com/Sparrow-lang/sparrow),
-[eC](https://ec-lang.org/)
-[Terra](https://terralang.org/)
-[Vala](https://wiki.gnome.org/Projects/Vala)
+[eC](https://ec-lang.org/),
+[Terra](https://terralang.org/),
+[Vala](https://wiki.gnome.org/Projects/Vala),
+[Swift](https://www.swift.org/),
+[Roc](https://www.roc-lang.org/),
+
 
 ## ATS
 
@@ -449,18 +452,17 @@ N/A
 
 * main: http://www.projectoberon.com
 * note:
-  - Oberon is not just a language but a full system (OS, even HW)
-  - Some flavors of the language rely on garbage collection.
-  - there are several recent variants:
-    - active Oberon Spec from 2019  http://cas.inf.ethz.ch/projects/a2/repository/raw/trunk/LanguageReport/OberonLanguageReport.pdf
-    - Oberon+ https://github.com/oberon-lang
-* repo: N/A
+  - Oberon DOES use garbage collection but it has been used to implememt an OS of the same name
+    so we include here
+  - There are serveral flavors of Oberon (
+      Oberon-2 (1992),
+      [Obereon-7 (2007](http://people.inf.ethz.ch/wirth/Oberon/Oberon07.Report.pdf),
+      [Active Oberon](http://cas.inf.ethz.ch/projects/a2/repository/raw/trunk/LanguageReport/OberonLanguageReport.pdf),
+      [Oberon+](https://github.com/oberon-lang) )
+* repo:
+  - Oberon+ https://github.com/oberon-lang/
 * documentation:
   - http://www.projectoberon.com
-  - http://www.ethoberon.ethz.ch/WirthPubl/ProjectOberon.pdf
-  - [System](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.System.pdf)
-    [Application](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.Applications.pdf)
-    [Computer](https://inf.ethz.ch/personal/wirth/ProjectOberon/PO.Computer.pdf)
 * discussion:
   - https://news.ycombinator.com/item?id=21557057
 * implementation-language: Oberon
@@ -496,7 +498,7 @@ PROCEDURE fib(VAR n: INTEGER) : INTEGER;
   BEGIN 
     a := 0;
     b := 1;
-    FOT i := 1 TO n DO
+    FOR i := 1 TO n DO
       c := a + b;
       a = b
       b = c
@@ -545,6 +547,48 @@ fibonacci :: proc(n: int) -> int {
   return fibonacci(n-1) + fibonacci(n-2)
 }
 
+```
+
+# FreePascal
+
+
+* main: https://www.freepascal.org/
+* repo: https://github.com/fpc
+* documentation: https://www.freepascal.org/docs.html
+* note: includes support for Delphi language extensions (classes, etc.)
+* discussion:
+  - https://news.ycombinator.com/from?site=freepascal.org
+* implementation-language: Pascal
+* meta-prgramming: generics
+* backends: Custom(X86 (32+64), PowerPC (32+64), Sparc, ARM (32+64))
+* major projects using the language
+* syntax: begin/end, type to the right of identifier
+* highlights:
+
+
+```
+program Hello;
+begin
+  writeln ('Hello, world.');
+  readln;
+end.
+```
+
+```
+function fibonacci(const n: integer): integer;
+var
+  a, b, c, i: integer;
+begin
+  a := 0;
+  b := 1;
+  for i := 1 to n do
+  begin
+    c := a + b;
+    a := b;
+    b := c;
+  end;
+  fibonacci := a
+end;
 ```
 
 ## Rust
