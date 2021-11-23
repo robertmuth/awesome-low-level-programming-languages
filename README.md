@@ -369,10 +369,10 @@ N/A
 * meta-programming: macros, generics (types, function, modules)
 * backends: LLVM
 * major projects using the language:
-* syntax: indentation matters, type to the right of identifier
+* syntax: optionally indentation sensitive, type to the right of identifier
 * highlights:
   - co-routines, threads and actors
-  - immutable by default
+  - "permission" attributes (`mut`, `unique`)
   - variant types
 
 ```
