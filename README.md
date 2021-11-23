@@ -212,7 +212,7 @@ int fib(int n) {
   - reference https://en.cppreference.com/w/
   - awesome-cpp https://github.com/fffaraz/awesome-cpp
   - AwesomePerfCpp https://github.com/fenbf/AwesomePerfCpp
-* meta-programming: template meta programming, generics, macros
+* meta-programming: template meta programming, generics (types, functions), macros
 * backends: LLVM, gcc, numerous others
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
@@ -366,12 +366,14 @@ N/A
 * discussion:
   - https://news.ycombinator.com/item?id=19565824
 * implementation-language: C
-* meta-programming: macros, generics
+* meta-programming: macros, generics (types, function, modules)
 * backends: LLVM
 * major projects using the language:
-* syntax: type to the right of identifier
+* syntax: indentation matters, type to the right of identifier
 * highlights:
   - co-routines, threads and actors
+  - immutable by default
+  - variant types
 
 ```
 import stdio
@@ -381,7 +383,12 @@ fn main():
 ```
 
 ```
-N/A
+fn fib(n i64) i64:
+  mut prior i64 = 0
+  mut result i64 = 1
+  while n-- > 0:
+    prior, result = result, prior + result
+  result
 
 ```
 
