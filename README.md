@@ -235,7 +235,7 @@ int fib(int n) {
     int a = 0;
     int b = 1;
     for (int i = 0; i < n; i++) {
-       int c = a + b;
+       const int c = a + b;
        a = b;
        b = c;
     }
@@ -273,7 +273,16 @@ public func i32 main(i32 argc, i8** argv) {
 ```
 
 ```
-N/A
+func i32 fib(int n) {
+    i32 a = 0;
+    i32 b = 1;
+    for (i32 i = 0; i < n; i++) {
+       i32 c = a + b;
+       a = b;
+       b = c;
+    }
+    return a;
+}
 ```
 
 ## C3
@@ -307,7 +316,16 @@ fn int main(int argc, char** argv) {
 ```
 
 ```
-N/A
+fn int fib(int n) {
+    int a = 0;
+    int b = 1;
+    for (int i = 0; i < n; i++) {
+       int c = a + b;
+       a = b;
+       b = c;
+    }
+    return a;
+}
 ```
 
 ## Carp
