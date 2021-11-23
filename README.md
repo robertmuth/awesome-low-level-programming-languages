@@ -62,7 +62,7 @@ Not yet summarized:
   - https://news.ycombinator.com/item?id=28214665
   - https://news.ycombinator.com/from?site=ats-lang.org
 * implementation-language: ATS
-* meta-prgramming: N/A
+* meta-programming: N/A
 * backends: C
 * major projects using the language: N/A
 * syntax: functional style
@@ -96,7 +96,7 @@ end // end of [fibc]
   - awesome-ada https://github.com/ohenley/awesome-ada
   - https://learn.adacore.com/
   - http://groups.umd.umich.edu/cis/course.des/cis400/ada/ada.html
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: gcc (gnat), several commerical implementations
 * major projects using the language: numerous
 * syntax: begin/end, type to the right of identifier
@@ -136,7 +136,7 @@ function fibonacci(n : in integer) return integer is
 * discussion:
   - https://news.ycombinator.com/item?id=21991382
 * implementation-language: C++
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: LLVM
 * major projects using the language: N/A
 * syntax: curly braces, type to the left of identifier
@@ -171,7 +171,7 @@ N/A
 * documentation:
   - https://github.com/inputsh/awesome-c
   - https://github.com/uhub/awesome-c
-* meta-prgramming: pre-processor
+* meta-programming: pre-processor
 * backends: LLVM, gcc, numerous others
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
@@ -212,7 +212,7 @@ int fib(int n) {
   - reference https://en.cppreference.com/w/
   - awesome-cpp https://github.com/fffaraz/awesome-cpp
   - AwesomePerfCpp https://github.com/fenbf/AwesomePerfCpp
-* meta-prgramming: template meta prgrammaing, generics, macros
+* meta-programming: template meta programming, generics, macros
 * backends: LLVM, gcc, numerous others
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
@@ -253,7 +253,7 @@ int fib(int n) {
   - https://news.ycombinator.com/from?site=c2lang.org
 * implementation-language: C++
 * hello-world: http://www.c3-lang.org/firstproject/
-* meta-prgramming: generics, N/A
+* meta-programming: generics, N/A
 * backends: LLVM
 * major projects using the language: N/A
 * syntax: curly braces, type to the left of identifier
@@ -286,7 +286,7 @@ N/A
   - https://news.ycombinator.com/item?id=27876570
 * implementation-language: C
 * hello-world: http://www.c3-lang.org/firstproject/
-* meta-prgramming: generics, semantic macros
+* meta-programming: generics, semantic macros
 * backends: LLVM
 * major projects using the language: N/A
 * syntax: curly braces, type to the left of identifier
@@ -320,7 +320,7 @@ N/A
   - https://news.ycombinator.com/item?id=28875051
   - https://news.ycombinator.com/item?id=20368969
 * implementation-language: Haskell
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: N/A
 * major projects using the language:
 * syntax: Lisp like
@@ -348,7 +348,7 @@ N/A
 * discussion:
   - https://news.ycombinator.com/item?id=19565824
 * implementation-language: C
-* meta-prgramming: macros, generics
+* meta-programming: macros, generics
 * backends: LLVM
 * major projects using the language:
 * syntax: type to the right of identifier
@@ -377,7 +377,7 @@ N/A
 * discussion:
   - https://news.ycombinator.com/from?site=kitlang.org
 * implementation-language: Crystal
-* meta-prgramming: N/A
+* meta-programming: N/A
 * backends: LLVM
 * major projects using the language: N/A
 * syntax: 
@@ -408,7 +408,7 @@ end
   - spec https://dlang.org/spec/spec.html
   - overview https://dlang.org/comparison.html
 * implementation-language: D
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: Custom (X86-64), LLVM, gcc
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
@@ -435,12 +435,12 @@ N/A
 * documentation:
   - http://www.forth.org/
 * implementation-language: C, assembler, 
-* meta-prgramming: N/A
+* meta-programming: N/A
 * backends: Custom
 * major projects using the language: N/A
 * syntax: unique
 * highlights:
- - concatenative programing style
+ - concatenative programming style
  - many different flavors
  - very easy to implement
  
@@ -466,7 +466,7 @@ N/A
   - inofffical https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md
   - Jonathan Blow YT channel https://www.youtube.com/user/jblow888/videos
 * implementation-language: C++
-* meta-prgramming: macros
+* meta-programming: macros
 * backends: LLVM (?), Custom
 * major projects using the language: N/A
 * syntax: N/A 
@@ -489,7 +489,7 @@ N/A
 * discussion:
   - https://news.ycombinator.com/from?site=kitlang.org
 * implementation-language: Haskell
-* meta-prgramming:
+* meta-programming:
 * backends: C
 * major projects using the language: N/A
 * syntax: curly braces, type to the left of identifier
@@ -523,7 +523,7 @@ N/A
 * discussion:
   - https://news.ycombinator.com/item?id=21557057
 * implementation-language: Oberon
-* meta-prgramming: None
+* meta-programming: None
 * backends: Custom
 * major projects using the language: Oberon-OS
 * syntax: begin/end, type to the right of identifier
@@ -574,7 +574,7 @@ END fib;
 * discussion:
   - https://news.ycombinator.com/item?id=22199942
 * implementation-language: C++
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: LLVM
 * major projects using the language: [EmberGen](https://jangafx.com/software/embergen/)
 * syntax: curly braces, type to the right of identifier
@@ -616,7 +616,7 @@ fibonacci :: proc(n: int) -> int {
 * discussion:
   - https://news.ycombinator.com/from?site=freepascal.org
 * implementation-language: Pascal
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: Custom(X86 (32+64), PowerPC (32+64), Sparc, ARM (32+64))
 * major projects using the language
 * syntax: begin/end, type to the right of identifier
@@ -655,7 +655,7 @@ end;
 * documentation:
   - https://doc.rust-lang.org/book/
 * implementation-language: V  
-* meta-prgramming: hygienic macros
+* meta-programming: hygienic macros
 * backends: LLVM
 * major projects using the language: numerous (including large parts of firefox)
 * syntax: curly braces, type to the right of identifier
@@ -695,7 +695,7 @@ fn fib(n: u8) -> u64 {
   - https://news.ycombinator.com/item?id=19830860
   - https://news.ycombinator.com/item?id=16603134
 * implementation-language: C++
-* meta-prgramming:
+* meta-programming:
 * backends: LLVM
 * major projects using the language
 * syntax: indentation sensitive
@@ -726,7 +726,7 @@ fn fib (n)
 * discussion:
   - https://news.ycombinator.com/from?site=vlang.io
 * implementation-language: V
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: C, LLVM
 * major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
@@ -766,7 +766,7 @@ fn fn(n int) int {
   - https://news.ycombinator.com/item?id=16603134
   - https://news.ycombinator.com/from?site=vale.dev
 * implementation-language: Vale, Scala
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: LLVM
 * major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
@@ -791,7 +791,7 @@ N/A
 * documentation: N/A
 * discussion: N/A
 * implementation-language: D
-* meta-prgramming: generics
+* meta-programming: generics
 * backends: Custom (X86-64)
 * major projects using the language: N/A
 * syntax: curly braces, type to the left of identifier
@@ -829,7 +829,7 @@ void main(u8* lpCmdLine, i32 nShowCmd) {
   - https://news.ycombinator.com/item?id=27399876
   - https://news.ycombinator.com/from?site=ziglang.org
 * implementation-language: C++, Zig
-* meta-prgramming: comptime (including types) 
+* meta-programming: comptime (including types) 
 * backends: LLVM, custom
 * major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
@@ -872,7 +872,7 @@ fn fibonacci(n: u32) u32 {
 * documentation:
 * discussion:
 * implementation-language:
-* meta-prgramming:
+* meta-programming:
 * backends:
 * major projects using the language
 * syntax:
