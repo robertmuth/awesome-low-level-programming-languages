@@ -527,7 +527,7 @@ N/A
 
 * main: http://www.projectoberon.com
 * note:
-  - Oberon DOES use garbage collection but it has been used to implememt an OS of the same name
+  - Oberon DOES use garbage collection but it has been used to implememt an influential OS of the same name
     so we include here.
   - There are serveral flavors of Oberon (
       Oberon-2 (1992),
@@ -833,6 +833,10 @@ void main(u8* lpCmdLine, i32 nShowCmd) {
 	write(stdout, msg);
 	exit(0);
 }
+```
+
+```
+N/A
 ```
   
 ## Zig
