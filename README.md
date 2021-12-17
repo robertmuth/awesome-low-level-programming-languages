@@ -24,6 +24,7 @@ Table of content
 - [Forth](#Forth)
 - [Jai](#Jai)
 - [Kit](#Kit)
+- [Modula-2](#Modula-2)
 - [Nim](#Nim)
 - [Oberon](#Oberon)
 - [Odin](#Odin)
@@ -39,7 +40,6 @@ Table of content
 Not yet summarized:
 
 [Jiyu](https://jiyu.handmade.network/), 
-[Modula-2](https://en.wikipedia.org/wiki/Modula-3),
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
 [Myr](https://myrlang.org/),
 [Roc](https://www.roc-lang.org/),
@@ -530,6 +530,54 @@ function main() {
 N/A
 ```
 
+## Modula-2
+
+* main: https://en.wikipedia.org/wiki/Modula-2
+* repo:
+  - Gnu Modula 2 Frontend (gm2) https://gcc.gnu.org/git/?p=gcc.git;a=shortlog;h=refs/heads/devel/modula-2
+* documentation:
+  - https://www.nongnu.org/gm2/homepage.html
+  - https://freepages.modula2.org/
+  - https://www.modula-2.net/
+* implementation-language: C (gm2)
+* meta-programming: None
+* backends: gcc (gm2)
+* major projects using the language: [Medos-2](https://en.wikipedia.org/wiki/Lilith_(computer)#Operating_system)
+* syntax: begin/end, type to the right of identifier
+* highlights:
+  - Evolution of Pascal
+  - Modules
+  - Co-routines
+
+```
+MODULE Hello;
+FROM STextIO IMPORT WriteString;
+BEGIN
+  WriteString("Hello World!")
+END Hello.
+```
+
+```
+PROCEDURE fib(n : INTEGER) : INTEGER;
+VAR
+    a, b, c : INTEGER;
+BEGIN
+    a := 0;
+    b := 1;
+ 
+    WHILE n > 0 DO
+        c := a + b;
+        a := b;
+        b := c;
+        DEC(n)
+    END;
+    
+    RETURN a
+END fib;
+
+```
+
+
 ## Oberon
 
 * main: http://www.projectoberon.com
@@ -582,8 +630,8 @@ PROCEDURE fib(VAR n: INTEGER) : INTEGER;
     b := 1;
     FOR i := 1 TO n DO
       c := a + b;
-      a = b
-      b = c
+      a := b
+      b := c
     END;
     RETURN a;
 END fib;
@@ -679,10 +727,10 @@ end;
 * repo: https://github.com/rust-lang
 * documentation:
   - https://doc.rust-lang.org/book/
-* implementation-language: V  
+* implementation-language: Rust 
 * meta-programming: hygienic macros
 * backends: LLVM
-* major projects using the language: numerous (including large parts of firefox)
+* major projects using the language: numerous (including large parts of [Firefox](https://www.mozilla.org/en-US/firefox/new/))
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - memory safety focus (ownership semantics)
