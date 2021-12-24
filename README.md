@@ -371,9 +371,10 @@ N/A
 * major projects using the language:
 * syntax: optionally indentation sensitive, type to the right of identifier
 * highlights:
-  - co-routines, threads and actors
-  - "permission" attributes (`mut`, `unique`)
-  - variant types
+  - [Regions and Lifetimes](https://cone.jondgoodwin.com/memory.html)
+  - [Permissions and Actors](https://cone.jondgoodwin.com/concurrency.html)
+  - [Variants, Structural Traits & Delegated Inheritance](https://cone.jondgoodwin.com/types.html)
+  - [<-, with, and match](https://cone.jondgoodwin.com/complexval.html)
 
 ```
 import stdio
