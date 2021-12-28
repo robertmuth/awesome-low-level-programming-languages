@@ -49,6 +49,7 @@ Not yet summarized:
 [Terra](https://terralang.org/),
 [Vala](https://wiki.gnome.org/Projects/Vala),
 [eC](https://ec-lang.org/),
+[Seed7](http://seed7.sourceforge.net/),
 
 
 ## ATS
