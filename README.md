@@ -24,6 +24,7 @@ Table of content
 - [Forth](#Forth)
 - [Jai](#Jai)
 - [Kit](#Kit)
+- [Lobster](#Lobster)
 - [Modula-2](#Modula-2)
 - [Nim](#Nim)
 - [Oberon](#Oberon)
@@ -68,7 +69,9 @@ Not yet summarized:
 * major projects using the language: N/A
 * syntax: functional style
 * highlights:
-  - proofs, dependent types
+  - proofs
+  - dependent types
+  - C code can be specified inline
 
 
 ```
@@ -530,6 +533,36 @@ function main() {
 
 ```
 N/A
+```
+
+## Lobster
+
+* main: http://aardappel.github.io/lobster/README_FIRST.html
+* repo: https://github.com/aardappel/lobster
+* discussion:
+  - https://news.ycombinator.com/item?id=19567160
+* implementation-language: C(++)
+* meta-programming: generics, comptime evals 
+* backends: bytecode VM, C++, WASM
+* major projects using the language: N/A
+* syntax: python inspired, white space sensitive
+* memory management: compile time reference counting, lifetime analysis, borrow checker, cycle detection at program exit.
+* highlights:
+  - (flow sensitive) type inference
+
+```
+print "hello world"
+```
+
+```
+def fibonacci(n: int):
+  a = 0
+  b = 1
+  for (n) i:
+    t = b
+    b += a
+    a = t
+  return a  
 ```
 
 ## Modula-2
