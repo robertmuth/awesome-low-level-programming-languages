@@ -635,6 +635,8 @@ END fib;
 * syntax: python inspired, white space sensitive
 * highlights:
   - c interop
+  - exceptions
+  - async implemented as library
   - case insensitve identifiers
 
 ```
