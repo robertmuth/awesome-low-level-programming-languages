@@ -612,6 +612,40 @@ END fib;
 
 ```
 
+## Nim
+
+* main: https://nim-lang.org/
+* repo:
+  - https://github.com/nim-lang/Nim
+* documentation:
+  - https://nim-lang.org/documentation.html
+* discussions:
+  - https://news.ycombinator.com/item?id=24800161
+  - https://news.ycombinator.com/item?id=27165366
+  - https://news.ycombinator.com/item?id=28916172
+* implementation-language: Nim (self hosting)
+* meta-programming: macros manipulating the AST, generics, templates
+* backends: JS, C
+* memory management: ARC
+* major projects using the language:
+  - Nim (self hosting)
+  - https://github.com/dom96/jester
+  - https://github.com/karaxnim/karax
+  - https://github.com/planety/prologue
+* syntax: python inspired, white space sensitive
+* highlights:
+  - c interop
+  - case insensitve identifiers
+
+```
+echo "Hello World"
+```
+
+```
+proc fib(n: uint64): uint64 =
+    if n <= 1: return n
+    return fib(n - 1) + fib(n - 2)
+```
 
 ## Oberon
 
