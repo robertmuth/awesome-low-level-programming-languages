@@ -22,6 +22,7 @@ Table of content
 - [Crystal](#Crystal)
 - [D](#D)
 - [Forth](#Forth)
+- [Hare](#Hare)
 - [Jai](#Jai)
 - [Kit](#Kit)
 - [Lobster](#Lobster)
@@ -487,6 +488,34 @@ N/A
 	DROP 1 ;
 ```
 
+## Hare
+
+* main: https://harelang.org/
+* repo: https://sr.ht/~sircmpwn/hare/
+* documentation:
+  - https://harelang.org/documentation/
+* implementation-language: C
+* error-handling: via tagged unions
+* meta-programming: ???
+* backends: QBE (restricted to 64bit: X86-64, AArch64)
+* major projects using the language: 
+  - https://sr.ht/~sircmpwn/himitsu/
+  - https://sr.ht/~sircmpwn/helios/
+* syntax: curly braces, type to the right of identifier
+
+
+```
+use fmt;
+
+export fn main() void = {
+    fmt::println("Hello, world!")!;
+};
+```
+
+```
+N/A
+```
+
 ## Jai
 
 * main: N/A
@@ -624,6 +653,7 @@ END fib;
   - https://news.ycombinator.com/item?id=27165366
   - https://news.ycombinator.com/item?id=28916172
 * implementation-language: Nim (self hosting)
+* error-handing: exceptions
 * meta-programming: macros manipulating the AST, generics, templates
 * backends: JS, C
 * memory management: ARC
@@ -635,7 +665,6 @@ END fib;
 * syntax: python inspired, white space sensitive
 * highlights:
   - c interop
-  - exceptions
   - async implemented as library
   - case insensitve identifiers
 
