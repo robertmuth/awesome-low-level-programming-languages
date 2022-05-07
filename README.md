@@ -719,6 +719,7 @@ END fib;
   - https://news.ycombinator.com/item?id=22199942
 * implementation-language: C++
 * meta-programming: generics
+* error-handling: "go-style" via multiple return values
 * backends: LLVM
 * major projects using the language: [EmberGen](https://jangafx.com/software/embergen/)
 * syntax: curly braces, type to the right of identifier
@@ -870,6 +871,7 @@ fn fib (n)
 * discussion:
   - https://news.ycombinator.com/from?site=vlang.io
 * implementation-language: V
+* error-handling: special case of optional types, dedicated syntax 
 * meta-programming: generics
 * backends: C, LLVM
 * major projects using the language: N/A
@@ -977,17 +979,17 @@ N/A
   - https://news.ycombinator.com/item?id=27399876
   - https://news.ycombinator.com/from?site=ziglang.org
 * implementation-language: C++, Zig
-* meta-programming: comptime (including types) 
+* meta-programming: comptime (including types)
+* error-handling: compiler built-in type, dedicated syntax 
 * backends: LLVM, custom
 * major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - small language
   - testing built into the language
-  - error handling with dedicated syntax
   - variables must be declared via `const` (immutable) or `var` (mutable)
   - no invisible control-flow
-
+  - defer/errdefer
 ```
 const std = @import("std");
 
