@@ -102,6 +102,7 @@ end // end of [fibc]
   - https://learn.adacore.com/
   - http://groups.umd.umich.edu/cis/course.des/cis400/ada/ada.html
 * meta-programming: generics
+* error-handlig: exceptions
 * backends: gcc (gnat), several commerical implementations
 * major projects using the language: numerous
 * syntax: begin/end, type to the right of identifier
@@ -177,6 +178,7 @@ N/A
   - https://github.com/inputsh/awesome-c
   - https://github.com/uhub/awesome-c
 * meta-programming: pre-processor
+* error-handling: magic return values by covention
 * backends: LLVM, gcc, numerous others
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
@@ -372,6 +374,7 @@ N/A
   - https://news.ycombinator.com/item?id=19565824
 * implementation-language: C
 * meta-programming: macros, generics (types, function, modules)
+* error-handling: execptions + special syntax for same line rethrowing/default values
 * backends: LLVM
 * major projects using the language:
 * syntax: optionally indentation sensitive, type to the right of identifier
