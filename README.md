@@ -527,6 +527,7 @@ N/A
   - inofficial https://inductive.no/jai/
   - inofffical https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md
   - Jonathan Blow YT channel https://www.youtube.com/user/jblow888/videos
+  - Community Library https://github.com/Jai-Community/Jai-Community-Library
 * implementation-language: C++
 * meta-programming: macros
 * backends: LLVM (?), Custom
