@@ -10,40 +10,44 @@ Feel free to send pull-requests with additions and corrections.
 
 Table of content
 
-- [ATS](#ATS)
-- [Ada](#Ada)
-- [Beef](#Beef)
-- [C](#C)
-- [C++](#C++)
-- [C2](#C2)
-- [C3](#C3)
-- [Carp](#Carp)
-- [Cone](#Cone)
-- [Crystal](#Crystal)
-- [D](#D)
-- [Forth](#Forth)
-- [Hare](#Hare)
-- [Jai](#Jai)
-- [Kit](#Kit)
-- [Lobster](#Lobster)
-- [Modula-2](#Modula-2)
-- [Nim](#Nim)
-- [Oberon](#Oberon)
-- [Odin](#Odin)
-- [(Free)Pascal/Delphi](#FreePascal)
-- [Rust](#Rust)
-- [Scopes](#Scopes)
-- [V](#V)
-- [Vale](#Vale)
-- [Vox](#Vox)
-- [Zig](#Zig)
+- [awesome-low-level-programming-languages](#awesome-low-level-programming-languages)
+  - [ATS](#ats)
+  - [Ada](#ada)
+  - [Beef](#beef)
+  - [C](#c)
+  - [C++](#c-1)
+  - [C2](#c2)
+  - [C3](#c3)
+  - [Carp](#carp)
+  - [Cone](#cone)
+  - [Crystal](#crystal)
+  - [D](#d)
+  - [Forth](#forth)
+  - [Hare](#hare)
+  - [Jai](#jai)
+  - [Kit](#kit)
+  - [Lobster](#lobster)
+  - [Modula-2](#modula-2)
+  - [Nim](#nim)
+  - [Oberon](#oberon)
+  - [Odin](#odin)
+  - [Pascal (FreePascal)](#pascal-freepascal)
+  - [Rust](#rust)
+  - [Scopes](#scopes)
+  - [V](#v)
+  - [Val](#val)
+  - [Vale](#vale)
+  - [Vox](#vox)
+  - [Zig](#zig)
 
 
-Not yet summarized:
+Not yet summarized (pull requests welcome):
 
 [Jiyu](https://jiyu.handmade.network/), 
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
+[Move](https://move-language.github.io/move/)
 [Myr](https://myrlang.org/),
+[Oak](https://github.com/adam-mcdaniel/oakc/)
 [Roc](https://www.roc-lang.org/),
 [Silk](https://github.com/AjayMT/silk),
 [Sparrow](https://github.com/Sparrow-lang/sparrow),
@@ -219,13 +223,18 @@ int fib(int n) {
   - reference https://en.cppreference.com/w/
   - awesome-cpp https://github.com/fffaraz/awesome-cpp
   - AwesomePerfCpp https://github.com/fenbf/AwesomePerfCpp
-* meta-programming: template meta programming, generics (types, functions), macros
+* meta-programming: 
+  - template meta programming
+  - generics (types, functions)
+  - comptime
+  - macros
 * backends: LLVM, gcc, numerous others
 * major projects using the language: numerous
 * syntax: curly braces, type to the left of identifier
 * highlights:
-  - curly braces, type to the left of identifier
-  - large language
+  - large user base
+  - several compilers 
+  - large language (evolving)
   - slow compiles
   
 ```
@@ -784,7 +793,7 @@ fibonacci :: proc(n: int) -> int {
 
 ```
 
-# FreePascal
+## Pascal (FreePascal)
 
 
 * main: https://www.freepascal.org/
@@ -833,7 +842,10 @@ end;
 * documentation:
   - https://doc.rust-lang.org/book/
 * implementation-language: Rust 
-* meta-programming: hygienic macros
+* meta-programming: 
+  - hygienic macros
+  - generics/traits
+  - comptime
 * backends: LLVM
 * major projects using the language: numerous (including large parts of [Firefox](https://www.mozilla.org/en-US/firefox/new/))
 * syntax: curly braces, type to the right of identifier
@@ -933,6 +945,20 @@ fn fn(n int) int {
 }
 ```
 
+## Val
+
+(Needs more work - pull requests welcome)
+
+* main: https://github.com/val-lang
+* repo: https://github.com/val-lang/val
+* documentation: https://github.com/val-lang/val/wiki/Val's-Language-Guide
+* discussion: https://news.ycombinator.com/item?id=31788527
+* implementation-language: Swift
+* meta-programming:
+* backends:
+* major projects using the language
+* syntax: curly braces, type to the right of identifier
+* highlights: value semantics
 
 ## Vale
 
@@ -1060,4 +1086,12 @@ fn fibonacci(n: u32) u32 {
 * major projects using the language
 * syntax:
 * highlights:
+
+```
+HELLO WORLD SNIPPET
+```
+
+```
+FIBONACCI SNIPPET
+```
 -->
