@@ -43,19 +43,20 @@ Table of content
 
 Not yet summarized (pull requests welcome):
 
+[Austral](https://github.com/austral/austral),
+[eC](https://ec-lang.org/),
 [Jiyu](https://jiyu.handmade.network/), 
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
 [Move](https://move-language.github.io/move/)
 [Myr](https://myrlang.org/),
 [Oak](https://github.com/adam-mcdaniel/oakc/)
 [Roc](https://www.roc-lang.org/),
+[Seed7](http://seed7.sourceforge.net/),
 [Silk](https://github.com/AjayMT/silk),
 [Sparrow](https://github.com/Sparrow-lang/sparrow),
 [Swift](https://www.swift.org/),
 [Terra](https://terralang.org/),
 [Vala](https://wiki.gnome.org/Projects/Vala),
-[eC](https://ec-lang.org/),
-[Seed7](http://seed7.sourceforge.net/),
 
 
 ## ATS
