@@ -44,6 +44,7 @@ Table of content
 Not yet summarized (pull requests welcome):
 
 [Austral](https://github.com/austral/austral),
+[Carbon](https://github.com/carbon-language/carbon-lang),
 [eC](https://ec-lang.org/),
 [Jiyu](https://jiyu.handmade.network/), 
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
