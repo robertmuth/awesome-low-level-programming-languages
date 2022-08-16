@@ -1,9 +1,11 @@
 # awesome-low-level-programming-languages
 
-A curated list of low level programming languages primarily aimed and OS and game
+A curated list of **low level** programming languages primarily aimed and OS and game
 programming.
 
 **Excluded are languages relying on managed run-times and without manual memory management.**
+(For less exclusionary lists check [ChessMax](https://github.com/ChessMax/awesome-programming-languages) or
+[Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages).)
 
 Feel free to send pull-requests with additions and corrections.
 
