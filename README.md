@@ -424,7 +424,7 @@ fn fib(n i64) i64:
 * discussion:
   - https://news.ycombinator.com/from?site=kitlang.org
 * implementation-language: Crystal
-* meta-programming: N/A
+* meta-programming: [Sophisticated macro system](https://crystal-lang.org/reference/1.5/syntax_and_semantics/macros/) 
 * backends: LLVM
 * major projects using the language: N/A
 * syntax: 
