@@ -23,6 +23,7 @@ Table of content
   - [Carp](#carp)
   - [Cone](#cone)
   - [Crystal](#crystal)
+  - [CSpydr](#cspydr)
   - [D](#d)
   - [Forth](#forth)
   - [Hare](#hare)
@@ -48,7 +49,6 @@ Not yet summarized (pull requests welcome):
 [Alumina](https://github.com/tibordp/alumina)
 [Austral](https://github.com/austral/austral),
 [Carbon](https://github.com/carbon-language/carbon-lang),
-[CSpydr](https://github.com/Spydr06/CSpydr)
 [eC](https://ec-lang.org/),
 [Jiyu](https://jiyu.handmade.network/), 
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
@@ -447,6 +447,42 @@ def fib(n)
   end
   a
 end
+```
+
+## CSpydr
+
+* main: https://github.com/Spydr06/CSpydr
+* repo: https://github.com/Spydr06/CSpydr
+* documentation: https://github.com/Spydr06/CSpydr/wiki
+* implementation-language: C
+* meta-programming: macros
+* backends: x86_64 GNU Assembly, C (deprecated), LLVM (in progress)
+* major projects using the language: CSpydr's standard library
+* syntax: curly braces, type to the right of identifier with colon inbetween
+* highlights:
+  - namespaces
+  - closures
+  - automatic type inferrence
+  - custom std lib
+
+```
+import "std.csp";
+
+fn main(): i32 {
+    std::io::puts("Hello, World!");
+    <- 0;
+}
+```
+
+```
+fn fib(n: i32): i32 {
+    let a = 0;
+    let b = 1;
+    for 0 .. n {
+        a + b |> (a = b, b = $);
+    }
+    <- a;
+}
 ```
 
 ## D
