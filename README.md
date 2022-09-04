@@ -45,8 +45,10 @@ Table of content
 
 Not yet summarized (pull requests welcome):
 
+[Alumina](https://github.com/tibordp/alumina)
 [Austral](https://github.com/austral/austral),
 [Carbon](https://github.com/carbon-language/carbon-lang),
+[CSpydr](https://github.com/Spydr06/CSpydr)
 [eC](https://ec-lang.org/),
 [Jiyu](https://jiyu.handmade.network/), 
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
