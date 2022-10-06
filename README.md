@@ -46,8 +46,9 @@ Table of content
 
 Not yet summarized (pull requests welcome):
 
-[Alumina](https://github.com/tibordp/alumina)
+[Alumina](https://github.com/tibordp/alumina),
 [Austral](https://github.com/austral/austral),
+[Cakelisp](https://cakelisp.handmade.network/),
 [Carbon](https://github.com/carbon-language/carbon-lang),
 [eC](https://ec-lang.org/),
 [Jiyu](https://jiyu.handmade.network/), 
