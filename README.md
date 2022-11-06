@@ -52,6 +52,7 @@ Not yet summarized (pull requests welcome):
 [Carbon](https://github.com/carbon-language/carbon-lang),
 [eC](https://ec-lang.org/),
 [Jiyu](https://jiyu.handmade.network/), 
+[LitaC](https://github.com/tonysparks/litac-lang)
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
 [Move](https://move-language.github.io/move/)
 [Myr](https://myrlang.org/),
