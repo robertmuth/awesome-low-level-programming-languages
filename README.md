@@ -15,6 +15,7 @@ Table of content
 - [awesome-low-level-programming-languages](#awesome-low-level-programming-languages)
   - [ATS](#ats)
   - [Ada](#ada)
+  - [Alumina](#alumina)
   - [Beef](#beef)
   - [C](#c)
   - [C++](#c-1)
@@ -46,7 +47,6 @@ Table of content
 
 Not yet summarized (pull requests welcome):
 
-[Alumina](https://github.com/tibordp/alumina),
 [Austral](https://github.com/austral/austral),
 [Cakelisp](https://cakelisp.handmade.network/),
 [Carbon](https://github.com/carbon-language/carbon-lang),
@@ -54,9 +54,9 @@ Not yet summarized (pull requests welcome):
 [Jiyu](https://jiyu.handmade.network/), 
 [LitaC](https://github.com/tonysparks/litac-lang),
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
-[Move](https://move-language.github.io/move/)
+[Move](https://move-language.github.io/move/),
 [Myr](https://myrlang.org/),
-[Oak](https://github.com/adam-mcdaniel/oakc/)
+[Oak](https://github.com/adam-mcdaniel/oakc/),
 [Roc](https://www.roc-lang.org/),
 [Seed7](http://seed7.sourceforge.net/),
 [Silk](https://github.com/AjayMT/silk),
@@ -143,6 +143,31 @@ function fibonacci(n : in integer) return integer is
     end loop;
     return fib;
  end fibonacci;
+```
+## Alumina
+
+* main: https://docs.alumina-lang.net/
+* repo: https://github.com/tibordp/alumina
+* documentation: 
+  - https://docs.alumina-lang.net/
+* discussion:
+  - https://news.ycombinator.com/item?id=32702812
+* implementation-language: Rust
+* meta-programming: (hygienic) macros, (duck-typed) generics, opt-in dynamic dispatch polymorphism
+* backends: compiles to C11 with GCC/Clang extensions
+* major projects using the language: N/A
+* syntax:  curly braces, type to the right of identifier
+* highlights:
+  - defer
+  - uniform function call syntax
+  - closures
+  - block expressions
+* [pldb](https://pldb.com/languages/alumina.html)
+
+```fn main() {
+    println!("Hello, world!");
+}
+
 ```
 
 ## Beef
