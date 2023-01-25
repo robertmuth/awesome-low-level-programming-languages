@@ -52,7 +52,7 @@ Not yet summarized (pull requests welcome):
 [Carbon](https://github.com/carbon-language/carbon-lang),
 [eC](https://ec-lang.org/),
 [Jiyu](https://jiyu.handmade.network/), 
-[LitaC](https://github.com/tonysparks/litac-lang)
+[LitaC](https://github.com/tonysparks/litac-lang),
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
 [Move](https://move-language.github.io/move/)
 [Myr](https://myrlang.org/),
@@ -85,7 +85,7 @@ Not yet summarized (pull requests welcome):
   - proofs
   - dependent types
   - C code can be specified inline
-
+* [https://pldb.com/languages/ats.html](pldb)
 
 ```
 #include "share/atspre_staload.hats"
@@ -120,7 +120,7 @@ end // end of [fibc]
 * syntax: begin/end, type to the right of identifier
 * highlights:
   - design by contract
-
+* [https://pldb.com/languages/ada.html](pldb)
 ```
 with Ada.Text_IO;
 
@@ -162,6 +162,7 @@ function fibonacci(n : in integer) return integer is
   - inspired by C#
   - co-designed with IDE
   - windows centric development
+* [https://pldb.com/languages/beef.html](pldb)
 
 ```
 using System;
@@ -201,6 +202,7 @@ N/A
   - array to pointer auto conversion
   - no defer (or RAII) mechanism
   - lots of undefined / implementation defined behavior
+* [https://pldb.com/languages/c.html](pldb)
 
 ```
 #include <stdio.h>
@@ -244,6 +246,7 @@ int fib(int n) {
   - several compilers 
   - large language (evolving)
   - slow compiles
+* [https://pldb.com/languages/cpp.html](pldb)
   
 ```
 #include <iostream>
@@ -283,6 +286,7 @@ int fib(int n) {
 * syntax: curly braces, type to the left of identifier
 * highlights:
   - modernized C
+* [https://pldb.com/languages/c2.html](pldb)
 
 ```
 module hello_world;
@@ -326,6 +330,7 @@ func i32 fib(int n) {
 * highlights:
   - evolution of C
   - contracts
+* [https://pldb.com/languages/c3.html](pldb)
 
 ```
 module hello_world;
@@ -369,6 +374,7 @@ fn int fib(int n) {
 * highlights:
   - repl
   - ownership tracking
+* [https://pldb.com/languages/carp.html](pldb)
 
 ```
 import stdio
@@ -434,6 +440,7 @@ fn fib(n i64) i64:
 * syntax: 
 * highlights:
   - similar to ruby 
+* [https://pldb.com/languages/crystal.html](pldb)
 
 ```
 puts "Hello World"
@@ -466,7 +473,7 @@ end
   - closures
   - automatic type inferrence
   - custom std lib
-
+* [https://pldb.com/languages/cspydr.html](pldb)
 ```
 import "std.csp";
 
@@ -502,6 +509,7 @@ fn fib(n: i32): i32 {
 * highlights:
   - large language
   - optional GC
+* [https://pldb.com/languages/d.html](pldb)
 
 ```
 import std.stdio;
@@ -530,7 +538,8 @@ N/A
  - concatenative programming style
  - many different flavors
  - very easy to implement
- 
+* [https://pldb.com/languages/forth.html](pldb)
+* 
 ```
 : HELLO ."Hello World " ;
 
@@ -558,7 +567,7 @@ N/A
   - https://sr.ht/~sircmpwn/himitsu/
   - https://sr.ht/~sircmpwn/helios/
 * syntax: curly braces, type to the right of identifier
-
+* [https://pldb.com/languages/hare.html](pldb)
 
 ```
 use fmt;
@@ -669,6 +678,7 @@ def fibonacci(n: int):
   - Evolution of Pascal
   - Modules
   - Co-routines
+* [https://pldb.com/languages/modula-2.html](pldb)
 
 ```
 MODULE Hello;
@@ -724,6 +734,7 @@ END fib;
   - c interop
   - async implemented as library
   - case insensitve identifiers
+* [https://pldb.com/languages/nim.html](pldb)
 
 ```
 echo "Hello World"
@@ -760,6 +771,7 @@ proc fib(n: uint64): uint64 =
 * highlights:
   - evolution of Pascal and Modula-2
   - deliberate small language
+* [https://pldb.com/languages/oberon.html](pldb)
 
 ```
 MODULE Hello;
@@ -811,7 +823,7 @@ END fib;
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - implcit context parameter
-
+* [https://pldb.com/languages/odin.html](pldb)
 
 ```
 package main
@@ -852,7 +864,7 @@ fibonacci :: proc(n: int) -> int {
 * major projects using the language
 * syntax: begin/end, type to the right of identifier
 * highlights:
-
+* [https://pldb.com/languages/pascal.html](pldb)
 
 ```
 program Hello;
@@ -900,6 +912,7 @@ end;
   - steep learning curve
   - large language
   - slow compiles
+* [https://pldb.com/languages/rust.html](pldb)
 
 ```
 fn main() {
@@ -969,7 +982,7 @@ fn fib (n)
   - go derived syntax
   - immutable by default
   - some confusion around memory-allocators and GC ("autofree")
-
+* [https://pldb.com/languages/v.html](pldb)
 ```
 fn main() {
   println('Hello, World!')
@@ -1093,6 +1106,8 @@ N/A
   - variables must be declared via `const` (immutable) or `var` (mutable)
   - no invisible control-flow
   - defer/errdefer
+* [https://pldb.com/languages/zig.html](pldb)
+
 ```
 const std = @import("std");
 
