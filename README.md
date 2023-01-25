@@ -164,7 +164,8 @@ function fibonacci(n : in integer) return integer is
   - block expressions
 * [pldb](https://pldb.com/languages/alumina.html)
 
-```fn main() {
+```
+fn main() {
     println!("Hello, world!");
 }
 
