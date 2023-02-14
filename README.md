@@ -664,7 +664,7 @@ N/A
   - https://news.ycombinator.com/item?id=19567160
 * implementation-language: C(++)
 * meta-programming: generics, comptime evals 
-* backends: bytecode VM, C++, WASM
+* backends: JIT (libtcc), C++
 * major projects using the language: N/A
 * syntax: python inspired, white space sensitive
 * memory management: compile time reference counting, lifetime analysis, borrow checker, cycle detection at program exit.
@@ -676,11 +676,11 @@ print "hello world"
 ```
 
 ```
-def fibonacci(n: int):
-  a = 0
-  b = 1
-  for (n) i:
-    t = b
+def fibonacci(n:int):
+  var a = 0
+  var b = 1
+  for(n):
+    let t = b
     b += a
     a = t
   return a  
