@@ -127,6 +127,9 @@ end // end of [fibc]
 * major projects using the language: numerous
 * syntax: begin/end, type to the right of identifier
 * highlights:
+  - type refinement
+  - multitasking built in from the start
+  - real-time constructs
   - design by contract
 * [pldb](https://pldb.com/languages/ada.html)
 ```
