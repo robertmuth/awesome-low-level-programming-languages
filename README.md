@@ -124,7 +124,7 @@ end // end of [fibc]
   - http://groups.umd.umich.edu/cis/course.des/cis400/ada/ada.html
 * meta-programming: generics
 * error-handlig: exceptions
-* backends: gcc (gnat), [LLVM](https://github.com/AdaCore/gnat-llvm), several commerical implementations
+* backends: GCC (gnat), [LLVM](https://github.com/AdaCore/gnat-llvm), several commerical implementations
 * major projects using the language: numerous
 * syntax: begin/end, type to the right of identifier
 * highlights:
