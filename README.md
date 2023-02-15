@@ -130,6 +130,7 @@ end // end of [fibc]
 * syntax: begin/end, type to the right of identifier
 * highlights:
   - type refinement
+  - fixed point types
   - multitasking built in from the start
   - real-time constructs
   - hierarchical package system for separate compilation
