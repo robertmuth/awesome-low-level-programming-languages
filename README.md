@@ -51,7 +51,7 @@ Not yet summarized (pull requests welcome):
 [Cakelisp](https://cakelisp.handmade.network/),
 [Carbon](https://github.com/carbon-language/carbon-lang),
 [eC](https://ec-lang.org/),
-[Jiyu](https://jiyu.handmade.network/), 
+[Jiyu](https://jiyu.handmade.network/),
 [LitaC](https://github.com/tonysparks/litac-lang),
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
 [Move](https://move-language.github.io/move/),
@@ -123,7 +123,7 @@ end // end of [fibc]
   - http://groups.umd.umich.edu/cis/course.des/cis400/ada/ada.html
 * meta-programming: generics
 * error-handlig: exceptions
-* backends: gcc (gnat), several commerical implementations
+* backends: gcc (gnat), [LLVM](https://github.com/AdaCore/gnat-llvm), several commerical implementations
 * major projects using the language: numerous
 * syntax: begin/end, type to the right of identifier
 * highlights:
@@ -156,7 +156,7 @@ function fibonacci(n : in integer) return integer is
 
 * main: https://docs.alumina-lang.net/
 * repo: https://github.com/tibordp/alumina
-* documentation: 
+* documentation:
   - https://docs.alumina-lang.net/
 * discussion:
   - https://news.ycombinator.com/item?id=32702812
@@ -267,7 +267,7 @@ int fib(int n) {
   - reference https://en.cppreference.com/w/
   - awesome-cpp https://github.com/fffaraz/awesome-cpp
   - AwesomePerfCpp https://github.com/fenbf/AwesomePerfCpp
-* meta-programming: 
+* meta-programming:
   - template meta programming
   - generics (types, functions)
   - comptime
@@ -277,11 +277,11 @@ int fib(int n) {
 * syntax: curly braces, type to the left of identifier
 * highlights:
   - large user base
-  - several compilers 
+  - several compilers
   - large language (evolving)
   - slow compiles
 * [pldb](https://pldb.com/languages/cpp.html)
-  
+
 ```
 #include <iostream>
 
@@ -468,12 +468,12 @@ fn fib(n i64) i64:
 * discussion:
   - https://news.ycombinator.com/from?site=kitlang.org
 * implementation-language: Crystal
-* meta-programming: [Sophisticated macro system](https://crystal-lang.org/reference/1.5/syntax_and_semantics/macros/) 
+* meta-programming: [Sophisticated macro system](https://crystal-lang.org/reference/1.5/syntax_and_semantics/macros/)
 * backends: LLVM
 * major projects using the language: N/A
-* syntax: 
+* syntax:
 * highlights:
-  - similar to ruby 
+  - similar to ruby
 * [pldb](https://pldb.com/languages/crystal.html)
 
 ```
@@ -563,7 +563,7 @@ N/A
 * repo: N/A
 * documentation:
   - http://www.forth.org/
-* implementation-language: C, assembler, 
+* implementation-language: C, assembler,
 * meta-programming: N/A
 * backends: Custom
 * major projects using the language: N/A
@@ -581,9 +581,9 @@ N/A
 
 ```
 : FIB ( x -- y ) RECURSIVE
-	DUP 2 > IF DUP  1- RECURSE 
-		   SWAP 2- RECURSE +  EXIT 
-	     ENDIF 
+	DUP 2 > IF DUP  1- RECURSE
+		   SWAP 2- RECURSE +  EXIT
+	     ENDIF
 	DROP 1 ;
 ```
 
@@ -597,7 +597,7 @@ N/A
 * error-handling: via tagged unions
 * meta-programming: ???
 * backends: QBE (restricted to 64bit: X86-64, AArch64)
-* major projects using the language: 
+* major projects using the language:
   - https://sr.ht/~sircmpwn/himitsu/
   - https://sr.ht/~sircmpwn/helios/
 * syntax: curly braces, type to the right of identifier
@@ -628,7 +628,7 @@ N/A
 * meta-programming: macros
 * backends: LLVM (?), Custom
 * major projects using the language: N/A
-* syntax: N/A 
+* syntax: N/A
 * highlights:
   - compile time execution
 
@@ -671,7 +671,7 @@ N/A
 * discussion:
   - https://news.ycombinator.com/item?id=19567160
 * implementation-language: C(++)
-* meta-programming: generics, comptime evals 
+* meta-programming: generics, comptime evals
 * backends: JIT (libtcc), C++
 * major projects using the language: N/A
 * syntax: python inspired, white space sensitive
@@ -691,7 +691,7 @@ def fibonacci(n:int):
     let t = b
     b += a
     a = t
-  return a  
+  return a
 ```
 
 ## Modula-2
@@ -729,14 +729,14 @@ VAR
 BEGIN
     a := 0;
     b := 1;
- 
+
     WHILE n > 0 DO
         c := a + b;
         a := b;
         b := c;
         DEC(n)
     END;
-    
+
     RETURN a
 END fib;
 
@@ -811,7 +811,7 @@ proc fib(n: uint64): uint64 =
 MODULE Hello;
          IMPORT Oberon, Texts;
   VAR W: Texts.Writer;
-  
+
   PROCEDURE World*;
   BEGIN
     Texts.WriteString(W, "Hello World!");
@@ -828,7 +828,7 @@ END Hello.
 PROCEDURE fib(VAR n: INTEGER) : INTEGER;
   VAR
     a, b, c, i : INTEGER;
-  BEGIN 
+  BEGIN
     a := 0;
     b := 1;
     FOR i := 1 TO n DO
@@ -931,8 +931,8 @@ end;
 * repo: https://github.com/rust-lang
 * documentation:
   - https://doc.rust-lang.org/book/
-* implementation-language: Rust 
-* meta-programming: 
+* implementation-language: Rust
+* meta-programming:
   - hygienic macros
   - generics/traits
   - comptime
@@ -965,7 +965,7 @@ fn fib(n: u8) -> u64 {
   }
   curr
 }
-```  
+```
 
 ## Scopes
 
@@ -1007,7 +1007,7 @@ fn fib (n)
 * discussion:
   - https://news.ycombinator.com/from?site=vlang.io
 * implementation-language: V
-* error-handling: special case of optional types, dedicated syntax 
+* error-handling: special case of optional types, dedicated syntax
 * meta-programming: generics
 * backends: C, LLVM
 * major projects using the language: N/A
@@ -1116,7 +1116,7 @@ void main(u8* lpCmdLine, i32 nShowCmd) {
 ```
 N/A
 ```
-  
+
 ## Zig
 
 * main: https://ziglang.org
@@ -1130,7 +1130,7 @@ N/A
   - https://news.ycombinator.com/from?site=ziglang.org
 * implementation-language: C++, Zig
 * meta-programming: comptime (including types)
-* error-handling: compiler built-in type, dedicated syntax 
+* error-handling: compiler built-in type, dedicated syntax
 * backends: LLVM, custom
 * major projects using the language: N/A
 * syntax: curly braces, type to the right of identifier
