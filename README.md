@@ -122,6 +122,7 @@ end // end of [fibc]
   - awesome-ada https://github.com/ohenley/awesome-ada
   - https://learn.adacore.com/
   - http://groups.umd.umich.edu/cis/course.des/cis400/ada/ada.html
+* implementation-language: Ada, C
 * meta-programming: generics
 * error-handlig: exceptions
 * backends: GCC (gnat), [LLVM](https://github.com/AdaCore/gnat-llvm), several commerical implementations
