@@ -135,6 +135,7 @@ end // end of [fibc]
   - real-time constructs
   - hierarchical package system for separate compilation
   - design by contract
+  - standard defined FFI for C, Fortran and COBOL
 * [pldb](https://pldb.com/languages/ada.html)
 ```
 with Ada.Text_IO;
