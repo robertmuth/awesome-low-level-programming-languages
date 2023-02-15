@@ -107,7 +107,10 @@ end // end of [fibc]
 
 ## Ada
 
-* main: N/A
+* main:
+  1. [Ada Information Clearing House](https://www.adaic.org)
+  2. [Ada Conformity Assessment Authority](http://www.ada-auth.org)
+  3. [Ada Language](https://ada-lang.io) (Community)
 * repo: N/A
 * documentation:
   - awesome-ada https://github.com/ohenley/awesome-ada
