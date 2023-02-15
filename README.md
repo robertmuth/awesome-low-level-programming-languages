@@ -113,11 +113,12 @@ end // end of [fibc]
   3. [Ada Language](https://ada-lang.io) (Community)
 * repo: N/A
 * documentation:
-  - [Ada 2022 Reference Manuals](http://www.ada-auth.org/standards/ada22.html) - Next
-  - [Ada 2012 Reference Manuals](http://www.ada-auth.org/standards/ada12.html) - Current
-  - [Ada 2005 Reference Manuals](https://www.adaic.org/ada-resources/standards/ada05)
-  - [Ada 1995 Reference Manuals](https://www.adaic.org/ada-resources/standards/ada-95-documents)
-  - [Ada 1983 Reference Manuals](https://www.adaic.org/ada-resources/standards/ada83) - First ISO standard
+  - Reference Manuals:
+    + [Ada 2022](http://www.ada-auth.org/standards/ada22.html) - Next
+    + [Ada 2012](http://www.ada-auth.org/standards/ada12.html) - Current
+    + [Ada 2005](https://www.adaic.org/ada-resources/standards/ada05)
+    + [Ada 1995](https://www.adaic.org/ada-resources/standards/ada-95-documents)
+    + [Ada 1983](https://www.adaic.org/ada-resources/standards/ada83) - First ISO standard
   - awesome-ada https://github.com/ohenley/awesome-ada
   - https://learn.adacore.com/
   - http://groups.umd.umich.edu/cis/course.des/cis400/ada/ada.html
