@@ -132,6 +132,7 @@ end // end of [fibc]
   - type refinement
   - multitasking built in from the start
   - real-time constructs
+  - hierarchical package system for separate compilation
   - design by contract
 * [pldb](https://pldb.com/languages/ada.html)
 ```
