@@ -28,6 +28,7 @@ Table of content
   - [D](#d)
   - [Forth](#forth)
   - [Hare](#hare)
+  - [Hylo (formerly: Val](#hylo)
   - [Jai](#jai)
   - [Kit](#kit)
   - [Lobster](#lobster)
@@ -39,7 +40,6 @@ Table of content
   - [Rust](#rust)
   - [Scopes](#scopes)
   - [V](#v)
-  - [Val](#val)
   - [Vale](#vale)
   - [Vox](#vox)
   - [Zig](#zig)
@@ -623,6 +623,21 @@ export fn main() void = {
 N/A
 ```
 
+## Hylo (formerly: Val)
+
+(Needs more work - pull requests welcome)
+
+* main: https://www.hylo-lang.org
+* repo: https://github.com/hylo-lang/hylo
+* documentation: https://docs.hylo-lang.org/language-tour/
+* discussion: https://news.ycombinator.com/item?id=31788527
+* implementation-language: Swift
+* meta-programming:
+* backends:
+* major projects using the language
+* syntax: curly braces, type to the right of identifier
+* highlights: value semantics
+
 ## Jai
 
 * main: N/A
@@ -1043,21 +1058,6 @@ fn fn(n int) int {
   return a
 }
 ```
-
-## Val
-
-(Needs more work - pull requests welcome)
-
-* main: https://github.com/val-lang
-* repo: https://github.com/val-lang/val
-* documentation: https://github.com/val-lang/val/wiki/Val's-Language-Guide
-* discussion: https://news.ycombinator.com/item?id=31788527
-* implementation-language: Swift
-* meta-programming:
-* backends:
-* major projects using the language
-* syntax: curly braces, type to the right of identifier
-* highlights: value semantics
 
 ## Vale
 
