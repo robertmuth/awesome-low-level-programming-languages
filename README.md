@@ -28,7 +28,7 @@ Table of content
   - [D](#d)
   - [Forth](#forth)
   - [Hare](#hare)
-  - [Hylo (formerly: Val](#hylo)
+  - [Hylo (formerly: Val)](#hylo)
   - [Jai](#jai)
   - [Kit](#kit)
   - [Lobster](#lobster)
@@ -623,8 +623,9 @@ export fn main() void = {
 N/A
 ```
 
-## Hylo (formerly: Val)
+## Hylo 
 
+(formerly: Val)
 (Needs more work - pull requests welcome)
 
 * main: https://www.hylo-lang.org
