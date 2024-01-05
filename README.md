@@ -57,6 +57,7 @@ Not yet summarized (pull requests welcome):
 [Modula-3](https://en.wikipedia.org/wiki/Modula-3),
 [Move](https://move-language.github.io/move/),
 [Myr](https://myrlang.org/),
+[Neat](https://neat-lang.github.io/),
 [Oak](https://github.com/adam-mcdaniel/oakc/),
 [Roc](https://www.roc-lang.org/),
 [Seed7](http://seed7.sourceforge.net/),
