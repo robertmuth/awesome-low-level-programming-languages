@@ -58,6 +58,7 @@ Not yet summarized (pull requests welcome):
 [Move](https://move-language.github.io/move/),
 [Myr](https://myrlang.org/),
 [Neat](https://neat-lang.github.io/),
+[Nelua](https://nelua.io/),
 [Oak](https://github.com/adam-mcdaniel/oakc/),
 [Roc](https://www.roc-lang.org/),
 [Seed7](http://seed7.sourceforge.net/),
