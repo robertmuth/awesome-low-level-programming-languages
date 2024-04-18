@@ -60,6 +60,7 @@ Not yet summarized (pull requests welcome):
 [Neat](https://neat-lang.github.io/),
 [Nelua](https://nelua.io/),
 [Oak](https://github.com/adam-mcdaniel/oakc/),
+[Ocen](https://github.com/ocen-lang/ocen),
 [Roc](https://www.roc-lang.org/),
 [Seed7](http://seed7.sourceforge.net/),
 [Silk](https://github.com/AjayMT/silk),
