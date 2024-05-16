@@ -1,6 +1,6 @@
 # awesome-low-level-programming-languages
 
-A curated list of **low level** programming languages primarily aimed and OS and game
+A curated list of **low level** programming languages primarily aimed at OS and game
 programming.
 
 **Excluded are languages relying on managed run-times and without manual memory management.**
