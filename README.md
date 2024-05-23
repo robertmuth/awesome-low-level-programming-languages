@@ -3,7 +3,7 @@
 A curated list of **low level** programming languages primarily aimed at OS and game
 programming.
 
-**Excluded are languages relying on managed run-times and without manual memory management.**
+**Excluded are languages relying on managed run-times, GC, JITs, green threads, etc.**
 (For less exclusionary lists check [ChessMax](https://github.com/ChessMax/awesome-programming-languages) or
 [Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages).)
 
@@ -61,7 +61,6 @@ Not yet summarized (pull requests welcome):
 [Nelua](https://nelua.io/),
 [Oak](https://github.com/adam-mcdaniel/oakc/),
 [Ocen](https://github.com/ocen-lang/ocen),
-[Roc](https://www.roc-lang.org/),
 [Seed7](http://seed7.sourceforge.net/),
 [Silk](https://github.com/AjayMT/silk),
 [Sparrow](https://github.com/Sparrow-lang/sparrow),
