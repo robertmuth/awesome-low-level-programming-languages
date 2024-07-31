@@ -422,10 +422,7 @@ fn int fib(int n) {
 * [pldb](https://pldb.pub/concepts/carp.html)
 
 ```
-import stdio
-
-fn main():
-  print <- "Hello world!"
+(println "hello world")
 ```
 
 ```
