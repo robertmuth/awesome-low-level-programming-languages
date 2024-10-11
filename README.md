@@ -1141,7 +1141,7 @@ N/A
 * meta-programming: comptime (including types)
 * error-handling: compiler built-in type, dedicated syntax
 * backends: LLVM, custom
-* major projects using the language: N/A
+* major projects using the language: [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle) [bun](https://github.com/oven-sh/bun)
 * syntax: curly braces, type to the right of identifier
 * highlights:
   - small language
