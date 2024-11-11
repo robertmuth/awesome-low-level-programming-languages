@@ -51,6 +51,7 @@ Not yet summarized (pull requests welcome):
 [Cakelisp](https://cakelisp.handmade.network/),
 [Carbon](https://github.com/carbon-language/carbon-lang),
 [eC](https://ec-lang.org/),
+[Heix](https://github.com/helixlang/helix-lang),
 [Inko](https://inko-lang.org/),
 [Jiyu](https://jiyu.handmade.network/),
 [LitaC](https://github.com/tonysparks/litac-lang),
