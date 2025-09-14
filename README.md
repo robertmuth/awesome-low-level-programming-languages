@@ -1047,7 +1047,6 @@ fn fib (n)
   - protocol-oriented programming
   - cross-platform (Apple platforms, Linux, Windows, embedded)
   - C, C++, Obj-C and Java interoperability
-[Swift Embedded Examples](https://github.com/swiftlang/swift-embedded-examples/)
 
 ```swift
 print("Hello, World!")
