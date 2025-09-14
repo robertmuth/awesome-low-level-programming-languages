@@ -39,6 +39,7 @@ Table of content
   - [Pascal (FreePascal)](#pascal-freepascal)
   - [Rust](#rust)
   - [Scopes](#scopes)
+  - [Swift](#swift)
   - [V](#v)
   - [Vale](#vale)
   - [Vox](#vox)
@@ -65,7 +66,6 @@ Not yet summarized (pull requests welcome):
 [Seed7](http://seed7.sourceforge.net/),
 [Silk](https://github.com/AjayMT/silk),
 [Sparrow](https://github.com/Sparrow-lang/sparrow),
-[Swift](https://www.swift.org/),
 [Terra](https://terralang.org/),
 [Vala](https://wiki.gnome.org/Projects/Vala),
 
@@ -1021,6 +1021,48 @@ fn fib (n)
     else
       break b
 
+```
+## Swift
+
+* main: https://swift.org/
+* repo: https://github.com/SwiftLang
+* documentation:
+  - https://www.swift.org/documentation/
+* discussion:
+  - https://forums.swift.org
+* implementation-language: C++ and Swift
+* error-handling: dedicated syntax
+* meta-programming:
+  - generics
+  - compile-time evaluation
+  - macros
+* backends: LLVM, clang, many others
+* major projects using the language: most apps from Apple, server-side frameworks (Vapr, Hummingbird, SwiftNIO), and much more
+* syntax: curly braces, type to the right of identifier and C/C++ like
+* highlights:
+  - open source
+  - large user base (Apple ecosystem + beyond)
+  - ARC (Automatic Reference Counting) for memory management
+  - strong type inference
+  - protocol-oriented programming
+  - cross-platform (Apple platforms, Linux, Windows, embedded)
+  - C, C++, Obj-C and Java interoperability
+
+```swift
+print("Hello, World!")
+```
+
+```
+func fibbonacci(number: Int) -> Int {
+	var a = 0
+  	var b = 1
+  	for _ in 0..<n {
+    	let c = a + b
+    	a = b
+    	b = c
+  	}
+  	return a
+}
 ```
 
 ## V
