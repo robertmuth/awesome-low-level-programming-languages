@@ -324,11 +324,12 @@ int fib(int n) {
   - http://c2lang.org/site/
 * discussion:
   - https://news.ycombinator.com/from?site=c2lang.org
-* implementation-language: C++
-* hello-world: http://www.c3-lang.org/firstproject/
+* implementation-language: C2 (self hosting)
+* hello-world: http://www.c2lang.org/site/introduction/helloworld
 * meta-programming: generics, N/A
-* backends: LLVM
-* major projects using the language: N/A
+* backends: C
+* major projects using the language:
+  - C2 (self hosting)
 * syntax: curly braces, type to the left of identifier
 * highlights:
   - modernized C
@@ -337,38 +338,30 @@ int fib(int n) {
 ```
 module hello_world;
 
-import stdio local;
+import stdio as io;
 
-public func i32 main(i32 argc, i8** argv) {
-    printf("Hello World!\n");
+public fn i32 main(i32 argc, char** argv) {
+    io.printf("Hello World!\n");
     return 0;
 }
-
 ```
 
 ```
-func i32 fib(int n) {
-    i32 a = 0;
-    i32 b = 1;
-    for (i32 i = 0; i < n; i++) {
-       i32 c = a + b;
-       a = b;
-       b = c;
-    }
-    return a;
+fn u32 fib(u32 n) {
+    return n <= 2 ? 1 : fib(n - 1) +  fib(n - 2);
 }
 ```
 
 ## C3
 
-* main: http://www.c3-lang.org/
+* main: https://c3-lang.org/
 * repo: https://github.com/c3lang/c3c
 * documentation:
-  - http://www.c3-lang.org/compare/
+  - https://c3-lang.org/faq/compare-languages/
 * discussion:
   - https://news.ycombinator.com/item?id=27876570
 * implementation-language: C
-* hello-world: http://www.c3-lang.org/firstproject/
+* hello-world: https://c3-lang.org/getting-started/hello-world/
 * meta-programming: generics, semantic macros
 * backends: LLVM
 * major projects using the language: N/A
@@ -383,11 +376,10 @@ module hello_world;
 
 import std::io;
 
-fn int main(int argc, char** argv) {
-    io::println("Hello World!");
-    return 0;
+fn void main()
+{
+    io::printn("Hello, World!");
 }
-
 ```
 
 ```
