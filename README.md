@@ -1164,7 +1164,7 @@ N/A
 ## Zig
 
 * main: https://ziglang.org
-* repo: https://github.com/ziglang/zig
+* repo: https://codeberg.org/ziglang/zig
 * documentation:
   - https://ziglang.org/documentation/master/
 * discussion:
