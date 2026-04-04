@@ -681,6 +681,55 @@ function main() {
 N/A
 ```
 
+
+## Lateralus
+
+* main: https://github.com/bad-antics/lateralus-lang
+* repo: https://github.com/bad-antics/lateralus-lang
+* implementation-language: Python, C
+* meta-programming: decorators, compile-time evaluation
+* backends: VM (register-based bytecode), C
+* major projects using the language: N/A
+* syntax: Rust/Swift inspired, curly brace, pipeline operators
+* memory management: ownership model with borrow semantics
+* highlights:
+  - pipeline-native: first-class `|>` pipe operator for data flow
+  - bare-metal OS support
+  - custom assembly format (LTasm) with 80+ opcodes
+  - full LSP with VS Code extension (14 providers)
+  - async/await concurrency
+  - pattern matching, module system, generics
+
+```
+module examples.hello
+
+import io
+
+pub fn main() {
+    let nums = [1, 2, 3] |> map(fn(x) x * x)
+    io.println("Hello from Lateralus!")
+}
+
+pub struct Point { x: float  y: float }
+
+impl Point {
+    pub fn new(x: float, y: float) -> Point {
+        return Point { x: x, y: y }
+    }
+}
+```
+
+```
+; Hello World in Lateralus Assembly
+.section code
+.global _start
+
+_start:
+    PUSH_STR   "Hello, World!"
+    PRINTLN
+    PUSH_IMM   0
+    HALT
+```
 ## Lobster
 
 * main: http://aardappel.github.io/lobster/README_FIRST.html
