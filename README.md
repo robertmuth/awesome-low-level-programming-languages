@@ -31,6 +31,7 @@ Table of content
   - [Hylo (formerly: Val)](#hylo)
   - [Jai](#jai)
   - [Kit](#kit)
+  - [Lateralus](#lateralus)
   - [Lobster](#lobster)
   - [Modula-2](#modula-2)
   - [Nim](#nim)
