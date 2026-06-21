@@ -1229,43 +1229,84 @@ fn fibonacci(n: u32) u32 {
 
 # Not yet summarized (pull requests welcome):
 
-### [Austral](https://github.com/austral/austral)
+### Austral
 
-### [Cakelisp](https://cakelisp.handmade.network/)
+* main: https://github.com/austral/austral
 
-### [Carbon](https://github.com/carbon-language/carbon-lang)
+### Cakelisp
 
-### [eC](https://ec-lang.org/)
+* https://cakelisp.handmade.network/
 
-### [Helix](https://github.com/helixlang/helix-lang)
+### Carbon
 
-### [Inko](https://inko-lang.org/
+* https://docs.carbon-lang.dev/
+* https://github.com/carbon-language/carbon-lang
 
-### [Jiyu](https://jiyu.handmade.network/)
+### eC
 
-### [LitaC](https://github.com/tonysparks/litac-lang)
+* https://ec-lang.org/
 
-### [Modula-3](https://en.wikipedia.org/wiki/Modula-3)
+### Helix
 
-### [Move](https://move-language.github.io/move/)
+* https://github.com/helixlang/helix-lang
 
-### [Myr](https://myrlang.org/)
+### Inko
 
-### [Neat](https://neat-lang.github.io/)
+* https://inko-lang.org/
 
-### [Nelua](https://nelua.io/)
+### Jiyu
 
-### [Oak](https://github.com/adam-mcdaniel/oakc/)
+* https://jiyu.handmade.network/
 
-### [Ocen](https://github.com/ocen-lang/ocen)
+### LitaC
 
-### [Seed7](http://seed7.sourceforge.net/)
+* https://github.com/tonysparks/litac-lang
 
-### [Silk](https://github.com/AjayMT/silk)
+### Modula-3
 
-### [Sparrow](https://github.com/Sparrow-lang/sparrow)
+* https://en.wikipedia.org/wiki/Modula-3
 
-### [Terra](https://terralang.org/)
+### Move
 
-### [Vala](https://wiki.gnome.org/Projects/Vala)
+* https://move-language.github.io/move/
+
+### Myr
+
+* https://myrlang.org/
+
+### Neat
+
+* https://neat-lang.github.io/
+
+### Nelua
+
+* https://nelua.io/
+
+### Oak
+
+* https://github.com/adam-mcdaniel/oakc/
+
+### Ocen
+
+* https://github.com/ocen-lang/ocen
+
+### Seed7
+
+* http://seed7.sourceforge.net/
+
+### Silk
+
+* https://github.com/AjayMT/silk
+
+### Sparrow
+
+https://github.com/Sparrow-lang/sparrow
+
+### Terra
+
+* https://terralang.org/
+
+### Vala
+
+* https://vala.dev/
 
