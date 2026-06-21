@@ -1,3 +1,9 @@
+> [!NOTE]
+> For a table of contents press the button with the three dashes in the upper right corner of this view
+> 
+> If you want to add or fix something in this document, send a pull request or file an issue.
+
+
 # awesome-low-level-programming-languages
 
 A curated list of **low level** programming languages primarily aimed at OS and game
@@ -7,69 +13,28 @@ programming.
 (For less exclusionary lists check [ChessMax](https://github.com/ChessMax/awesome-programming-languages) or
 [Wikipedia](https://en.wikipedia.org/wiki/List_of_programming_languages).)
 
-Feel free to send pull-requests with additions and corrections.
+<!--
+## Template
 
+* main:
+* repo:
+* documentation:
+* discussion:
+* implementation-language:
+* meta-programming:
+* backends:
+* major projects using the language
+* syntax:
+* highlights:
 
-Table of content
+```
+HELLO WORLD SNIPPET
+```
 
-- [awesome-low-level-programming-languages](#awesome-low-level-programming-languages)
-  - [ATS](#ats)
-  - [Ada](#ada)
-  - [Alumina](#alumina)
-  - [Beef](#beef)
-  - [C](#c)
-  - [C++](#c-1)
-  - [C2](#c2)
-  - [C3](#c3)
-  - [Carp](#carp)
-  - [Cone](#cone)
-  - [Crystal](#crystal)
-  - [CSpydr](#cspydr)
-  - [D](#d)
-  - [Forth](#forth)
-  - [Hare](#hare)
-  - [Hylo (formerly: Val)](#hylo)
-  - [Jai](#jai)
-  - [Kit](#kit)
-  - [Lateralus](#lateralus)
-  - [Lobster](#lobster)
-  - [Modula-2](#modula-2)
-  - [Nim](#nim)
-  - [Oberon](#oberon)
-  - [Odin](#odin)
-  - [Pascal (FreePascal)](#pascal-freepascal)
-  - [Rust](#rust)
-  - [Scopes](#scopes)
-  - [Swift](#swift)
-  - [V](#v)
-  - [Vale](#vale)
-  - [Vox](#vox)
-  - [Zig](#zig)
-
-
-Not yet summarized (pull requests welcome):
-
-[Austral](https://github.com/austral/austral),
-[Cakelisp](https://cakelisp.handmade.network/),
-[Carbon](https://github.com/carbon-language/carbon-lang),
-[eC](https://ec-lang.org/),
-[Helix](https://github.com/helixlang/helix-lang),
-[Inko](https://inko-lang.org/),
-[Jiyu](https://jiyu.handmade.network/),
-[LitaC](https://github.com/tonysparks/litac-lang),
-[Modula-3](https://en.wikipedia.org/wiki/Modula-3),
-[Move](https://move-language.github.io/move/),
-[Myr](https://myrlang.org/),
-[Neat](https://neat-lang.github.io/),
-[Nelua](https://nelua.io/),
-[Oak](https://github.com/adam-mcdaniel/oakc/),
-[Ocen](https://github.com/ocen-lang/ocen),
-[Seed7](http://seed7.sourceforge.net/),
-[Silk](https://github.com/AjayMT/silk),
-[Sparrow](https://github.com/Sparrow-lang/sparrow),
-[Terra](https://terralang.org/),
-[Vala](https://wiki.gnome.org/Projects/Vala),
-
+```
+FIBONACCI SNIPPET
+```
+-->
 
 ## ATS
 
@@ -1260,25 +1225,47 @@ fn fibonacci(n: u32) u32 {
 }
 ```
 
-<!--
-## Template
 
-* main:
-* repo:
-* documentation:
-* discussion:
-* implementation-language:
-* meta-programming:
-* backends:
-* major projects using the language
-* syntax:
-* highlights:
 
-```
-HELLO WORLD SNIPPET
-```
+# Not yet summarized (pull requests welcome):
 
-```
-FIBONACCI SNIPPET
-```
--->
+### [Austral](https://github.com/austral/austral)
+
+### [Cakelisp](https://cakelisp.handmade.network/)
+
+### [Carbon](https://github.com/carbon-language/carbon-lang)
+
+### [eC](https://ec-lang.org/)
+
+### [Helix](https://github.com/helixlang/helix-lang)
+
+### [Inko](https://inko-lang.org/
+
+### [Jiyu](https://jiyu.handmade.network/)
+
+### [LitaC](https://github.com/tonysparks/litac-lang)
+
+### [Modula-3](https://en.wikipedia.org/wiki/Modula-3)
+
+### [Move](https://move-language.github.io/move/)
+
+### [Myr](https://myrlang.org/)
+
+### [Neat](https://neat-lang.github.io/)
+
+### [Nelua](https://nelua.io/)
+
+### [Oak](https://github.com/adam-mcdaniel/oakc/)
+
+### [Ocen](https://github.com/ocen-lang/ocen)
+
+### [Seed7](http://seed7.sourceforge.net/)
+
+### [Silk](https://github.com/AjayMT/silk)
+
+### [Sparrow](https://github.com/Sparrow-lang/sparrow)
+
+### [Terra](https://terralang.org/)
+
+### [Vala](https://wiki.gnome.org/Projects/Vala)
+
