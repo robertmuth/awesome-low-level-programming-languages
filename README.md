@@ -999,6 +999,59 @@ fn fib(n: u8) -> u64 {
 }
 ```
 
+## SEMAPRAX
+
+* main: https://wavect.io/semaprax/
+* repo: https://github.com/wavect/semaprax
+* documentation:
+  - https://github.com/wavect/semaprax/blob/main/docs/RFC-0001.md
+  - https://github.com/wavect/semaprax/blob/main/docs/COMPLETION-MATRIX.md
+* discussion:
+  - https://news.ycombinator.com/item?id=49408521
+* implementation-language: Rust
+* meta-programming: bounded explicit generics
+* error-handling: checked arithmetic statuses and bounded `Option`/`Result`
+* backends: C11/Clang, WebAssembly Core
+* major projects using the language: N/A (pre-alpha research project)
+* syntax: curly braces, type to the right of identifier
+* highlights:
+  - deterministic, versioned semantic program graph
+  - persistent identities for public declarations
+  - revision-bound, replayable semantic patches
+  - compile-time ownership and move checking on the admitted language subset
+  - evidence-gated native and WebAssembly compiler lanes
+* [pldb](https://pldb.pub/concepts/semaprax.html)
+
+```
+module examples.meaning;
+
+@id("app.main")
+fn main() -> i64
+    ensures result == 42
+{
+    42
+}
+```
+
+```
+@id("math.fib")
+fn fib(n: i64) -> i64
+    requires n >= 0
+{
+    let mut remaining = n;
+    let mut previous = 0;
+    let mut current = 1;
+    while remaining > 0 {
+        let next = previous + current;
+        previous = current;
+        current = next;
+        remaining = remaining - 1;
+        remaining > 0
+    }
+    previous
+}
+```
+
 ## Scopes
 
 * main: https://scopes.readthedocs.io/en/latest/
@@ -1309,4 +1362,3 @@ https://github.com/Sparrow-lang/sparrow
 ### Vala
 
 * https://vala.dev/
-
