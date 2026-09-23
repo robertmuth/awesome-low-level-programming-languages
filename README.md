@@ -726,6 +726,54 @@ def fibonacci(n:int):
   return a
 ```
 
+## Mach
+
+* main: https://machlang.org
+* repo: https://github.com/briar-systems/mach
+* documentation: https://machlang.org/docs/
+* discussion:
+  - https://news.ycombinator.com/item?id=48453666
+  - https://discord.com/invite/dfWG9NhGj7
+* implementation-language: Mach (self-hosted)
+* meta-programming: generics, comptime (`$if` conditional compilation, comptime parameters, variadic packs, type reflection)
+* backends: native x86_64, aarch64, riscv64 and SPIR-V code generators with its own ELF, Mach-O and COFF linker
+* major projects using the language: the compiler itself, [hedge](https://github.com/briar-systems/hedge) (web server), [boom](https://github.com/briar-systems/boom) (game engine)
+* syntax: C-like with curly braces, types after names, no type inference
+* memory management: manual, allocators are explicit values
+* highlights:
+  - no hidden control flow: no exceptions, destructors or operator overloading
+  - tagged unions with lexically guarded payload access
+  - `fin` blocks for deferred cleanup
+  - secret types (`^T`) checked for constant-time use
+  - inline assembly and GPU shaders written in Mach
+  - one toolchain builds, links, tests, formats, vendors dependencies and cross-compiles
+
+```
+use std.print;
+use std.runtime;
+
+#[symbol("main")]
+fun main(argc: i64, argv: **u8) i64 {
+    print.println("hello world");
+    ret 0;
+}
+```
+
+```
+fun fibonacci(n: u64) u64 {
+    var a: u64 = 0;
+    var b: u64 = 1;
+    var i: u64 = 0;
+    for (i < n) {
+        val t: u64 = b;
+        b = a + b;
+        a = t;
+        i = i + 1;
+    }
+    ret a;
+}
+```
+
 ## Modula-2
 
 * main: https://en.wikipedia.org/wiki/Modula-2
