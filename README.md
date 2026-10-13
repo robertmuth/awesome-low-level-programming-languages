@@ -726,6 +726,51 @@ def fibonacci(n:int):
   return a
 ```
 
+## Loment
+
+* main: https://fujojtop.github.io/loment-site/
+* repo: https://github.com/FujoJTOP/loment
+* documentation:
+  - manual https://github.com/FujoJTOP/loment/blob/main/docs/manual/index.md
+  - language guide, self-contained and shipped inside the package: https://github.com/FujoJTOP/loment/blob/main/.claude/skills/loment/SKILL.md
+  - wiki https://loment.fandom.com/
+* discussion: https://discord.gg/rGw7NRNU
+* implementation-language: Loment (the compiler driver self-hosts at run time; a Python reference implementation sits beside it until that finishes)
+* meta-programming: compile-time `const`, generics, and a "form object" the build emits per unit and two independent validators check
+* backends: LLVM IR, linked by the repository's own linker (`lomelf`) — no clang needed to build a program
+* memory management: the program picks a reclamation tier with `choose` — compile-time promotion to the stack, definite-lifetime `free`, block epochs, or a mark-sweep collector (with an adaptive, generational variant). Default is explicit `alloc`/`free`.
+* major projects using the language: N/A (the toolchain itself)
+* syntax: Rust-flavored; the same program is also accepted with C, C++, Java, C#, Go or Python spelling
+* highlights:
+  - native x86-64: Linux ELF, Windows PE, or a freestanding object for bare metal
+  - `sealed` by default — no runtime, no libc, no undefined symbols; a hello-world is an 8 KB static executable
+  - every subsystem is a switch the program *states* (`sealed`/`hosted`, `std`/`no_std`, `runtime`/`no_runtime`, `vm`/`no_vm`, and the reclamation tier), set at most once in the root unit and recorded in the build
+  - capability domains: `capability blk : disk[0..4]` declares a range, `guard blk(i);` checks the index — at compile time for a literal, otherwise at run time
+  - installing and running needs no Python, no clang and no WSL; the package is native binaries plus the standard library
+
+```
+module hello
+
+fn _start() {
+    let s: str = "hello from Loment\n";
+    syscall4(1, 1, str_ptr(s) as u64, str_len(s) as u64);
+    syscall4(60, 0, 0, 0);
+}
+```
+
+```
+fn fib(n: u32) -> u32 {
+    if n < 2 {
+        return n;
+    }
+    return fib(n - 1) + fib(n - 2);
+}
+
+fn _start() {
+    syscall4(60, fib(20) as u64, 0, 0);
+}
+```
+
 ## Mach
 
 * main: https://machlang.org
